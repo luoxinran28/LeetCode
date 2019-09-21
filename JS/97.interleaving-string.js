@@ -31,7 +31,5 @@ var isInterleave = function(s1, s2, s3) {
       if (s2[j - 1] == s3[i + j - 1]) dp[i][j] = dp[i][j - 1] || dp[i][j];
     }
   }
-  console.log(dp);
-
   return dp[l][m];
 };
