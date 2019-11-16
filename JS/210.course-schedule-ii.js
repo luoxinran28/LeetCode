@@ -47,4 +47,51 @@ var findOrder = function(numCourses, prerequisites) {
   if (count_visited === numCourses) return res;
   return [];
 };
+
+// public class Solution {
+//   /*
+//    * @param numCourses: a total of n courses
+//    * @param prerequisites: a list of prerequisite pairs
+//    * @return: the course order
+//    */
+//   public int[] findOrder(int numCourses, int[][] prerequisites) {
+//       // write your code here
+//     HashMap<Integer, ArrayList<Integer>> graph = new HashMap<>();
+//     int[] indegree = new int[numCourses];
+//     for(int i = 0; i < prerequisites.length; i++) {
+//       if(graph.containsKey(prerequisites[i][1])) {
+//         ArrayList<Integer> neighbors = graph.get(prerequisites[i][1]);
+//         neighbors.add(prerequisites[i][0]);
+//         graph.put(prerequisites[i][1], neighbors);
+//       } else {
+//         ArrayList<Integer> newList = new ArrayList<Integer>();
+//         newList.add(prerequisites[i][0]);
+//         graph.put(prerequisites[i][1], newList); // Initialize the first neighbor
+//       }
+//       indegree[prerequisites[i][0]]++; // Neighbor course indegree increase 1
+//     }
+
+//     Queue<Integer> queue = new LinkedList<>();
+//     for(int i = 0; i < indegree.length; i++) {
+//       if(indegree[i] == 0) queue.offer(i);
+//     }
+//     int[] res = new int[numCourses];
+//     int count_visited = 0;
+//     while(queue.size() > 0) {
+//       int course = queue.poll();
+//       res[count_visited++] = course;
+//       List<Integer> neighbors = graph.get(course);
+//       for(int i = 0; neighbors != null && i < neighbors.size(); i++) {
+//         int n = neighbors.get(i);
+//         if(--indegree[n] == 0) {
+//           queue.offer(n);
+//         }
+//       }
+//     }
+//     if(count_visited == numCourses) return res;
+//     return new int[]{};
+//   }
+
+// }
+
 // @lc code=end
