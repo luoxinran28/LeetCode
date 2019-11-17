@@ -35,3 +35,31 @@ var longestConsecutive = function(nums) {
   }
   return max;
 };
+
+// Lint code:
+const longestConsecutive = function(num) {
+  if (num === null || num.length === 0) return 0;
+  let len = num.length;
+  let set = new Set();
+  let max = Number.MIN_VALUE;
+
+  num.forEach(n => set.add(n));
+
+  for (let i = 0; i < len; i++) {
+    if (set.has(num[i])) {
+      set.delete(num[i]);
+      let left = num[i] - 1;
+      let right = num[i] + 1;
+      while (set.has(left)) {
+        set.delete(left);
+        left--;
+      }
+      while (set.has(right)) {
+        set.delete(right);
+        right++;
+      }
+      max = Math.max(max, right - left - 1); // Because l anr r moved one extra step
+    }
+  }
+  return max;
+};
