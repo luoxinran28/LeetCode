@@ -40,4 +40,38 @@ var wordBreak = function(s, wordDict) {
   }
   return dfs(s, [], 0, 0);
 };
+
+// Lintcode
+var wordBreak = function(s, wordDict) {
+  // write your code here
+  if (s === null || s.length === 0) return [];
+  wordDict = new Set(wordDict);
+  let map = new Map();
+  map.set("", [""]);
+  return dfs(s, wordDict, [], map);
+
+  function dfs(s, wordDict) {
+    let sol = [];
+    if (map.has(s)) {
+      return map.get(s);
+    }
+
+    for (let i = 1; i <= s.length; i++) {
+      let s1 = s.substring(0, i);
+      let s2 = s.substring(i);
+      if (wordDict.has(s1)) {
+        let retArray = dfs(s2, wordDict, sol);
+        for (let s of retArray) {
+          if (s === "") {
+            sol.push(s1);
+          } else {
+            sol.push(s1 + " " + s);
+          }
+        }
+      }
+    }
+    map.set(s, sol);
+    return sol;
+  }
+};
 // @lc code=end
