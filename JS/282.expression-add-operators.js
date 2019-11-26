@@ -26,7 +26,6 @@ var addOperators = function(num, target) {
       let s = num.substring(cur, i + 1);
       let num_s = parseInt(s);
       if (i !== cur && num.charAt(cur) === "0") {
-        console.log("o");
         break;
       }
       if (cur === 0) {
