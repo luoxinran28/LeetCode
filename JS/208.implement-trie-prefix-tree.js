@@ -35,7 +35,7 @@
 //     }
 //     cur.isWord = true;
 //   }
-  
+    
 //   search(word) {
 //     let cur = traverse(this.root, word);
 //     return cur !== null && cur.isWord;
