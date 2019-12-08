@@ -37,5 +37,9 @@ UnionFindSet.prototype.union = function(u, v) {
 }
 ```
 
+## 目录
+
+* [721. Accounts Merge](721.-accounts-merge.md)
+
 
 
