@@ -13,7 +13,9 @@
       * [721. Accounts Merge](leetcode/data-structure/union-find/721.-accounts-merge.md)
       * [261. Graph Valid Tree](leetcode/data-structure/union-find/261.-graph-valid-tree.md)
       * [547. Friend Circles](leetcode/data-structure/union-find/547.-friend-circles.md)
-  * [常见问题按名分类 Common Questions By Name](leetcode/common-questions-by-name.md)
+  * [常见问题按名分类 Common Questions By Name](leetcode/common-questions-by-name/README.md)
+    * [Parentheses](leetcode/common-questions-by-name/parentheses/README.md)
+      * [301. Remove Invalid Parentheses](leetcode/common-questions-by-name/parentheses/301.-remove-invalid-parentheses.md)
 * [Behavior Questions](behavior-questions.md)
 * [System Design](system-design.md)
 
