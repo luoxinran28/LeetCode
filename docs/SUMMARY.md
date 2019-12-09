@@ -4,7 +4,7 @@
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
     * [Simulation](leetcode/data-structure/simulation/README.md)
-      * [Untitled](leetcode/data-structure/simulation/untitled.md)
+      * [31. Next Permutation](leetcode/data-structure/simulation/untitled.md)
     * [Two Pointers](leetcode/data-structure/two-pointers/README.md)
       * [42. Trapping Rain Water](leetcode/data-structure/two-pointers/42.-trapping-rain-water.md)
       * [209. Minimum Size Subarray Sum](leetcode/data-structure/two-pointers/209.-minimum-size-subarray-sum.md)
