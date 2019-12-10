@@ -1,5 +1,7 @@
 # 31. Next Permutation
 
+{% embed url="https://leetcode.com/problems/next-permutation/" %}
+
 题目要求下一个排列的数组是递增的，意味着下一个数比当前数大。例如下面例子，从右往左开始扫描，找到第一个没有递增的数就是3，因为”6，5，4，1“是递减的，意味着下一个排列已经到头了，”6，5，4，1“会被洗掉。
 
 ```text
