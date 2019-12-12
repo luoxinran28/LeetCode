@@ -3,6 +3,8 @@
 * [找工作 2019](README.md)
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
+    * [Greedy](leetcode/data-structure/greedy/README.md)
+      * [680. Valid Palindrome II](leetcode/data-structure/greedy/680.-valid-palindrome-ii.md)
     * [Heap](leetcode/data-structure/heap/README.md)
       * [253. Meeting Rooms II](leetcode/data-structure/heap/253.-meeting-rooms-ii.md)
     * [Simulation](leetcode/data-structure/simulation/README.md)
