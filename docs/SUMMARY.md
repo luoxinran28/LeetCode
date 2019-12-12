@@ -8,6 +8,7 @@
     * [Heap](leetcode/data-structure/heap/README.md)
       * [253. Meeting Rooms II](leetcode/data-structure/heap/253.-meeting-rooms-ii.md)
     * [Simulation](leetcode/data-structure/simulation/README.md)
+      * [953. Verifying an Alien Dictionary](leetcode/data-structure/simulation/953.-verifying-an-alien-dictionary.md)
       * [31. Next Permutation](leetcode/data-structure/simulation/untitled.md)
     * [Two Pointers](leetcode/data-structure/two-pointers/README.md)
       * [158. Read N Characters Given Read4 II - Call multiple times](leetcode/data-structure/two-pointers/158.-read-n-characters-given-read4-ii-call-multiple-times.md)
