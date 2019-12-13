@@ -3,6 +3,8 @@
 * [找工作 2019](README.md)
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
+    * [Memoriazation](leetcode/data-structure/memoriazation/README.md)
+      * [523. Continuous Subarray Sum](leetcode/data-structure/memoriazation/523.-continuous-subarray-sum.md)
     * [Tree](leetcode/data-structure/tree/README.md)
       * [199. Binary Tree Right Side View](leetcode/data-structure/tree/199.-binary-tree-right-side-view.md)
     * [Greedy](leetcode/data-structure/greedy/README.md)
