@@ -17,7 +17,7 @@ var isAlienSorted = function(words, order) {
   
   function bigger(word1, word2, order_idx) {
     let len = word2.length;
-    for(let i = 0; i < word1.length && i < word2.len
+    for (let i = 0;i < word1.length && i < word2.length; i++) {
       if(word1[i] !== word2[i]) {
         return  order_idx[word1.charCodeAt(i) - "a".charCodeAt()] >
                 order_idx[word2.charCodeAt(i) - "a".charCodeAt()];
