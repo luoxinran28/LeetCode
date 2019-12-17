@@ -12,6 +12,8 @@
     * [Heap](leetcode/data-structure/heap/README.md)
       * [253. Meeting Rooms II](leetcode/data-structure/heap/253.-meeting-rooms-ii.md)
     * [Simulation](leetcode/data-structure/simulation/README.md)
+      * [71. Simplify Path](leetcode/data-structure/simulation/71.-simplify-path.md)
+      * [415. Add Strings](leetcode/data-structure/simulation/415.-add-strings.md)
       * [67. Add Binary](leetcode/data-structure/simulation/67.-add-binary.md)
       * [953. Verifying an Alien Dictionary](leetcode/data-structure/simulation/953.-verifying-an-alien-dictionary.md)
       * [31. Next Permutation](leetcode/data-structure/simulation/untitled.md)
