@@ -1,0 +1,44 @@
+/**
+ * // Definition for a Node.
+ * function Node(val, left, right) {
+ *      this.val = val;
+ *      this.left = left;
+ *      this.right = right;
+ *  };
+ */
+/**
+ * @param {Node} root
+ * @return {Node}
+ */
+// 因为是inplace的，用栈来中序遍历，那点在于重新复制左右指针的时候，不能影响接下来入栈的操作。这里用一个prev指针记录前一个节点，start指针在遍历前找到最左的点为起始点，中序遍历之后，prev指向最后一个节点，相连起来就是回环了。
+var treeToDoublyList = function(root) {
+    if(!root) return null;
+  
+    let start = root;
+    while(start.left !== null) {
+      start = start.left;
+    }
+    
+    let stack = [];
+    let prev = null;
+    let cur = root;
+    while(cur !== null || stack.length > 0) {
+      while(cur !== null) {
+        stack.push(cur);
+        cur = cur.left;
+      }
+      cur = stack.pop();
+      if(prev !== null) {
+        cur.left = prev;
+        prev.right = cur;
+      }
+      prev = cur;
+      cur = cur.right;
+    }
+    // console.log(start, prev);
+    if(prev !== null) {
+      start.left = prev;
+      prev.right = start;
+    }
+    return start;
+  };
