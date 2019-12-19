@@ -1,4 +1,4 @@
-# 并查集 Union Find
+# Union Find
 
 并查集\(Union Find\)，用于判定无向图是否链接，主要有find和union连个函数，find的过程中要注意压缩子节点的深度，union过程中，rank值小的要接到大的下面，这样可以减少overhead。
 
