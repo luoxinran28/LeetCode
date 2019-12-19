@@ -1,4 +1,4 @@
-# Binary Search
+# 34. Find First and Last Position of Element in Sorted Array
 
 九章模板，通过改变nums\[mid\] &lt;= target 的等于条件来找到左右边界bound，等号在右边就是左边界，在左边就是右边界。结果如果是左边界，先判断left。
 
