@@ -20,6 +20,7 @@
       * [953. Verifying an Alien Dictionary](leetcode/data-structure/simulation/953.-verifying-an-alien-dictionary.md)
       * [31. Next Permutation](leetcode/data-structure/simulation/untitled.md)
     * [Two Pointers](leetcode/data-structure/two-pointers/README.md)
+      * [340. Longest Substring with At Most K Distinct Characters](leetcode/data-structure/two-pointers/340.-longest-substring-with-at-most-k-distinct-characters.md)
       * [158. Read N Characters Given Read4 II - Call multiple times](leetcode/data-structure/two-pointers/158.-read-n-characters-given-read4-ii-call-multiple-times.md)
       * [42. Trapping Rain Water](leetcode/data-structure/two-pointers/42.-trapping-rain-water.md)
       * [209. Minimum Size Subarray Sum](leetcode/data-structure/two-pointers/209.-minimum-size-subarray-sum.md)
