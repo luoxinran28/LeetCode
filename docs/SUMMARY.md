@@ -21,6 +21,7 @@
       * [1086. High Five](leetcode/data-structure/heap/1086.-high-five.md)
       * [253. Meeting Rooms II](leetcode/data-structure/heap/253.-meeting-rooms-ii.md)
     * [Simulation](leetcode/data-structure/simulation/README.md)
+      * [179. Largest Number](leetcode/data-structure/simulation/179.-largest-number.md)
       * [71. Simplify Path](leetcode/data-structure/simulation/71.-simplify-path.md)
       * [415. Add Strings](leetcode/data-structure/simulation/415.-add-strings.md)
       * [67. Add Binary](leetcode/data-structure/simulation/67.-add-binary.md)
