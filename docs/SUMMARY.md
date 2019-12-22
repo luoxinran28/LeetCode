@@ -5,6 +5,8 @@
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
     * [Backtracking](leetcode/data-structure/backtracking.md)
     * [Array](leetcode/data-structure/array/README.md)
+      * [27. Remove Element](leetcode/data-structure/array/27.-remove-element.md)
+      * [896. Monotonic Array](leetcode/data-structure/array/896.-monotonic-array.md)
       * [121. Best Time to Buy and Sell Stock](leetcode/data-structure/array/121.-best-time-to-buy-and-sell-stock.md)
       * [53. Maximum Subarray](leetcode/data-structure/array/53.-maximum-subarray.md)
     * [Binary Search](leetcode/data-structure/binary-search-1/README.md)
