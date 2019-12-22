@@ -8,7 +8,7 @@ I graduated from University of Utah for my Master of Computer Science degree in 
 
 * Why did you apply? 
 * Why do you think you are a good fit? 
-* Why Google/Amazon/Facebook? 
+* Why Google/Amazon/pFacebook? 
 * Why should we hire you? 
 * What makes you the best candidate? 
 
