@@ -11,8 +11,8 @@ description: >-
 * [LeetCode](leetcode/)
   * [Common Data Structure Template ](leetcode/data-structure/)
   * [Common Question By Name](leetcode/common-questions-by-name/)
-* [System Design]()
-* [Behavior Questions]()
+* [System Design](system-design/)
+* [Behavior Questions](behavior-questions.md)
 
 
 
