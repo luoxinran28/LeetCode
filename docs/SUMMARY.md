@@ -3,6 +3,8 @@
 * [找工作 2019](README.md)
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
+    * [Segment Tree](leetcode/data-structure/segment-tree/README.md)
+      * [307. Range Sum Query - Mutable](leetcode/data-structure/segment-tree/307.-range-sum-query-mutable.md)
     * [Dp](leetcode/data-structure/dp/README.md)
       * [96. Unique Binary Search Trees](leetcode/data-structure/dp/96.-unique-binary-search-trees.md)
     * [Backtracking](leetcode/data-structure/backtracking.md)
