@@ -8,6 +8,7 @@
     * [Segment Tree](leetcode/data-structure/segment-tree/README.md)
       * [307. Range Sum Query - Mutable](leetcode/data-structure/segment-tree/307.-range-sum-query-mutable.md)
     * [Dp](leetcode/data-structure/dp/README.md)
+      * [63. Unique Paths II](leetcode/data-structure/dp/63.-unique-paths-ii.md)
       * [683. Word Break III](leetcode/data-structure/dp/683.-word-break-iii.md)
       * [139. Word Break](leetcode/data-structure/dp/139.-word-break.md)
       * [96. Unique Binary Search Trees](leetcode/data-structure/dp/96.-unique-binary-search-trees.md)
