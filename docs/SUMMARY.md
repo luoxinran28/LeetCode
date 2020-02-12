@@ -3,6 +3,8 @@
 * [找工作 2019](README.md)
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
+    * [Linked List](leetcode/data-structure/linked-list/README.md)
+      * [138. Copy List with Random Pointer](leetcode/data-structure/linked-list/138.-copy-list-with-random-pointer.md)
     * [Prefix Sum](leetcode/data-structure/prefix-sum/README.md)
       * [325. Maximum Size Subarray Sum Equals k](leetcode/data-structure/prefix-sum/325.-maximum-size-subarray-sum-equals-k.md)
     * [Segment Tree](leetcode/data-structure/segment-tree/README.md)
