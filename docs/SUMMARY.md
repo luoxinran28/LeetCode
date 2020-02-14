@@ -62,6 +62,7 @@
       * [42. Trapping Rain Water](leetcode/data-structure/two-pointers/42.-trapping-rain-water.md)
       * [209. Minimum Size Subarray Sum](leetcode/data-structure/two-pointers/209.-minimum-size-subarray-sum.md)
     * [DFS](leetcode/data-structure/dfs/README.md)
+      * [51. N-Queens](leetcode/data-structure/dfs/51.-n-queens.md)
       * [399. Evaluate Division](leetcode/data-structure/dfs/399.-evaluate-division.md)
     * [BFS](leetcode/data-structure/bfs/README.md)
       * [987. Vertical Order Traversal of a Binary Tree](leetcode/data-structure/bfs/987.-vertical-order-traversal-of-a-binary-tree.md)
