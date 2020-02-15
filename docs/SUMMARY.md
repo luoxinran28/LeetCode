@@ -3,6 +3,8 @@
 * [找工作 2019](README.md)
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
+    * [Deque](leetcode/data-structure/deque/README.md)
+      * [239. Sliding Window Maximum](leetcode/data-structure/deque/239.-sliding-window-maximum.md)
     * [Linked List](leetcode/data-structure/linked-list/README.md)
       * [138. Copy List with Random Pointer](leetcode/data-structure/linked-list/138.-copy-list-with-random-pointer.md)
     * [Prefix Sum](leetcode/data-structure/prefix-sum/README.md)
