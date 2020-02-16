@@ -45,6 +45,7 @@
     * [Greedy](leetcode/data-structure/greedy/README.md)
       * [680. Valid Palindrome II](leetcode/data-structure/greedy/680.-valid-palindrome-ii.md)
     * [Heap](leetcode/data-structure/heap/README.md)
+      * [295. Find Median from Data Stream](leetcode/data-structure/heap/295.-find-median-from-data-stream.md)
       * [1086. High Five](leetcode/data-structure/heap/1086.-high-five.md)
       * [253. Meeting Rooms II](leetcode/data-structure/heap/253.-meeting-rooms-ii.md)
     * [Simulation](leetcode/data-structure/simulation/README.md)
