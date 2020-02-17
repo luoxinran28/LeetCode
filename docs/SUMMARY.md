@@ -51,6 +51,7 @@
       * [1086. High Five](leetcode/data-structure/heap/1086.-high-five.md)
       * [253. Meeting Rooms II](leetcode/data-structure/heap/253.-meeting-rooms-ii.md)
     * [Simulation](leetcode/data-structure/simulation/README.md)
+      * [49. Group Anagrams](leetcode/data-structure/simulation/49.-group-anagrams.md)
       * [424. Longest Repeating Character Replacement](leetcode/data-structure/simulation/424.-longest-repeating-character-replacement.md)
       * [232. Implement Queue using Stacks](leetcode/data-structure/simulation/232.-implement-queue-using-stacks.md)
       * [225. Implement Stack using Queues](leetcode/data-structure/simulation/225.-implement-stack-using-queues.md)
