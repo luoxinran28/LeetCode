@@ -3,6 +3,8 @@
 * [找工作 2019](README.md)
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
+    * [Trie](leetcode/data-structure/trie/README.md)
+      * [642. Design Search Autocomplete System](leetcode/data-structure/trie/642.-design-search-autocomplete-system.md)
     * [Deque](leetcode/data-structure/deque/README.md)
       * [239. Sliding Window Maximum](leetcode/data-structure/deque/239.-sliding-window-maximum.md)
     * [Linked List](leetcode/data-structure/linked-list/README.md)
