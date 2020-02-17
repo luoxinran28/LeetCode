@@ -24,6 +24,7 @@
       * [79. Word Search](leetcode/data-structure/backtracking/79.-word-search.md)
       * [93. Restore IP Addresses](leetcode/data-structure/backtracking/93.-restore-ip-addresses.md)
     * [Array](leetcode/data-structure/array/README.md)
+      * [937. Reorder Data in Log Files](leetcode/data-structure/array/937.-reorder-data-in-log-files.md)
       * [38. Search a 2D Matrix II](leetcode/data-structure/array/38.-search-a-2d-matrix-ii.md)
       * [27. Remove Element](leetcode/data-structure/array/27.-remove-element.md)
       * [896. Monotonic Array](leetcode/data-structure/array/896.-monotonic-array.md)
