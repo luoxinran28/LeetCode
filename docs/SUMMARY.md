@@ -40,6 +40,8 @@
       * [140. Word Break II](leetcode/data-structure/memoriazation/140.-word-break-ii.md)
       * [523. Continuous Subarray Sum](leetcode/data-structure/memoriazation/523.-continuous-subarray-sum.md)
     * [Tree](leetcode/data-structure/tree/README.md)
+      * [572. Subtree of Another Tree](leetcode/data-structure/tree/572.-subtree-of-another-tree.md)
+      * [100. Same Tree](leetcode/data-structure/tree/100.-same-tree.md)
       * [101. Symmetric Tree](leetcode/data-structure/tree/101.-symmetric-tree.md)
       * [95. Unique Binary Search Trees II](leetcode/data-structure/tree/95.-unique-binary-search-trees-ii.md)
       * [173. Binary Search Tree Iterator](leetcode/data-structure/tree/173.-binary-search-tree-iterator.md)
