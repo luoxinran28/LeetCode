@@ -99,6 +99,7 @@
       * [22. Generate Parentheses](leetcode/common-questions-by-name/parentheses/22.-generate-parentheses.md)
       * [301. Remove Invalid Parentheses](leetcode/common-questions-by-name/parentheses/301.-remove-invalid-parentheses.md)
 * [System Design](system-design/README.md)
+  * [348. Design Tic-Tac-Toe](system-design/348.-design-tic-tac-toe.md)
   * [1268. Search Suggestions System](system-design/1268.-search-suggestions-system.md)
   * [Design Netflix](system-design/design-netflix.md)
 * [Behavior Questions](behavior-questions.md)
