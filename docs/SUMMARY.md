@@ -14,6 +14,7 @@
     * [Segment Tree](leetcode/data-structure/segment-tree/README.md)
       * [307. Range Sum Query - Mutable](leetcode/data-structure/segment-tree/307.-range-sum-query-mutable.md)
     * [Dp](leetcode/data-structure/dp/README.md)
+      * [322. Coin Change](leetcode/data-structure/dp/322.-coin-change.md)
       * [472. Concatenated Words](leetcode/data-structure/dp/472.-concatenated-words.md)
       * [63. Unique Paths II](leetcode/data-structure/dp/63.-unique-paths-ii.md)
       * [683. Word Break III](leetcode/data-structure/dp/683.-word-break-iii.md)
