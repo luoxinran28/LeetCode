@@ -59,6 +59,7 @@
       * [1086. High Five](leetcode/data-structure/heap/1086.-high-five.md)
       * [253. Meeting Rooms II](leetcode/data-structure/heap/253.-meeting-rooms-ii.md)
     * [Simulation](leetcode/data-structure/simulation/README.md)
+      * [68. Text Justification](leetcode/data-structure/simulation/68.-text-justification.md)
       * [692. Top K Frequent Words](leetcode/data-structure/simulation/692.-top-k-frequent-words.md)
       * [347. Top K Frequent Elements](leetcode/data-structure/simulation/347.-top-k-frequent-elements.md)
       * [819. Most Common Word](leetcode/data-structure/simulation/819.-most-common-word.md)
