@@ -4,6 +4,7 @@
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
     * [Stack](leetcode/data-structure/stack/README.md)
+      * [85. Maximal Rectangle](leetcode/data-structure/stack/85.-maximal-rectangle.md)
       * [84. Largest Rectangle in Histogram](leetcode/data-structure/stack/84.-largest-rectangle-in-histogram.md)
     * [Trie](leetcode/data-structure/trie/README.md)
       * [642. Design Search Autocomplete System](leetcode/data-structure/trie/642.-design-search-autocomplete-system.md)
