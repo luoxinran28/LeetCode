@@ -113,6 +113,7 @@
       * [22. Generate Parentheses](leetcode/common-questions-by-name/parentheses/22.-generate-parentheses.md)
       * [301. Remove Invalid Parentheses](leetcode/common-questions-by-name/parentheses/301.-remove-invalid-parentheses.md)
 * [System Design](system-design/README.md)
+  * [535. Encode and Decode TinyURL](system-design/535.-encode-and-decode-tinyurl.md)
   * [460. LFU Cache](system-design/460.-lfu-cache.md)
   * [348. Design Tic-Tac-Toe](system-design/348.-design-tic-tac-toe.md)
   * [1268. Search Suggestions System](system-design/1268.-search-suggestions-system.md)
