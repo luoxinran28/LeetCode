@@ -29,6 +29,7 @@
       * [79. Word Search](leetcode/data-structure/backtracking/79.-word-search.md)
       * [93. Restore IP Addresses](leetcode/data-structure/backtracking/93.-restore-ip-addresses.md)
     * [Array](leetcode/data-structure/array/README.md)
+      * [88. Merge Sorted Array](leetcode/data-structure/array/88.-merge-sorted-array.md)
       * [1007. Minimum Domino Rotations For Equal Row](leetcode/data-structure/array/1007.-minimum-domino-rotations-for-equal-row.md)
       * [54. Spiral Matrix](leetcode/data-structure/array/54.-spiral-matrix.md)
       * [289. Game of Life](leetcode/data-structure/array/289.-game-of-life.md)
