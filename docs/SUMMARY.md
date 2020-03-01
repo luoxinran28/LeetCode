@@ -39,6 +39,7 @@
       * [121. Best Time to Buy and Sell Stock](leetcode/data-structure/array/121.-best-time-to-buy-and-sell-stock.md)
       * [53. Maximum Subarray](leetcode/data-structure/array/53.-maximum-subarray.md)
     * [Binary Search](leetcode/data-structure/binary-search-1/README.md)
+      * [153. Find Minimum in Rotated Sorted Array I/II](leetcode/data-structure/binary-search-1/153.-find-minimum-in-rotated-sorted-array-i-ii.md)
       * [33. Search in Rotated Sorted Array I/II](leetcode/data-structure/binary-search-1/33.-search-in-rotated-sorted-array.md)
       * [34. Find First and Last Position of Element in Sorted Array](leetcode/data-structure/binary-search-1/34.-find-first-and-last-position-of-element-in-sorted-array.md)
       * [74. Search a 2D Matrix](leetcode/data-structure/binary-search-1/74.-search-a-2d-matrix.md)
