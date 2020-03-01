@@ -52,6 +52,7 @@
       * [140. Word Break II](leetcode/data-structure/memoriazation/140.-word-break-ii.md)
       * [523. Continuous Subarray Sum](leetcode/data-structure/memoriazation/523.-continuous-subarray-sum.md)
     * [Tree](leetcode/data-structure/tree/README.md)
+      * [236. Lowest Common Ancestor of a Binary Tree](leetcode/data-structure/tree/236.-lowest-common-ancestor-of-a-binary-tree.md)
       * [124. Binary Tree Maximum Path Sum](leetcode/data-structure/tree/124.-binary-tree-maximum-path-sum.md)
       * [110. Balanced Binary Tree](leetcode/data-structure/tree/110.-balanced-binary-tree.md)
       * [99. Recover Binary Search Tree](leetcode/data-structure/tree/99.-recover-binary-search-tree.md)
