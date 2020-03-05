@@ -11,6 +11,7 @@
     * [Deque](leetcode/data-structure/deque/README.md)
       * [239. Sliding Window Maximum](leetcode/data-structure/deque/239.-sliding-window-maximum.md)
     * [Linked List](leetcode/data-structure/linked-list/README.md)
+      * [148. Sort List](leetcode/data-structure/linked-list/148.-sort-list.md)
       * [86. Partition List](leetcode/data-structure/linked-list/86.-partition-list.md)
       * [21. Merge Two Sorted Lists](leetcode/data-structure/linked-list/21.-merge-two-sorted-lists.md)
       * [82. Remove Duplicates from Sorted List II](leetcode/data-structure/linked-list/82.-remove-duplicates-from-sorted-list-ii.md)
