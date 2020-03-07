@@ -1,8 +1,12 @@
 # Trie
 
-字典树
+字典树，每个节点有26个字母作为key，value是下一个节点，还有一个boolean 的 is\_word的key，如果是true说明从更节点到当前节点的路径形成的字符串是一个单词。
 
 ```javascript
+/*
+字典树，每个节点有26个字母作为key，value是下一个节点，还有一个boolean 的 is_word的key，
+如果是true说明从更节点到当前节点的路径形成的字符串是一个单词。
+*/
 // The method with Array in JS is 24% faster and 20% less space. Too bad.
 class TrieNode {
 	constructor() {
