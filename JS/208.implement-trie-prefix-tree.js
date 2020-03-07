@@ -1,50 +1,54 @@
+/*
+字典树，每个节点有26个字母作为key，value是下一个节点，还有一个boolean 的 is_word的key，
+如果是true说明从更节点到当前节点的路径形成的字符串是一个单词。
+*/
 // The method with Array in JS is 24% faster and 20% less space. Too bad.
-// class TrieNode {
-// 	constructor() {
-// 		this.children = new Array(26) //can be a map, can be of different length based on requirement.
-// 		this.isWord = false;
-// 	}
-// }
+class TrieNode {
+	constructor() {
+		this.children = new Array(26) //can be a map, can be of different length based on requirement.
+		this.isWord = false;
+	}
+}
 
-// const traverse = (root, str) => {
-//   let cur = root;
-//   for(let i = 0; i < str.length; i++) {
-//     let ch = str.charCodeAt(i) - 'a'.charCodeAt();
-//     if(!cur.children[ch]) {
-//       return null;
-//     }
-//     cur = cur.children[ch];
-//   }
-//   return cur;
-// }
+const traverse = (root, str) => {
+  let cur = root;
+  for(let i = 0; i < str.length; i++) {
+    let ch = str.charCodeAt(i) - 'a'.charCodeAt();
+    if(!cur.children[ch]) {
+      return null;
+    }
+    cur = cur.children[ch];
+  }
+  return cur;
+}
 
 
-// class Trie {
-//   constructor() {
-//     this.root = new TrieNode();
-//   }
+class Trie {
+  constructor() {
+    this.root = new TrieNode();
+  }
   
-//   insert(word) {
-//     let cur = this.root;
-//     for(let i = 0; i < word.length; i++) {
-//       let ch = word.charCodeAt(i) - 'a'.charCodeAt();
-//       if(!cur.children[ch]) {
-//         cur.children[ch] = new TrieNode();
-//       }
-//       cur = cur.children[ch];
-//     }
-//     cur.isWord = true;
-//   }
+  insert(word) {
+    let cur = this.root;
+    for(let i = 0; i < word.length; i++) {
+      let ch = word.charCodeAt(i) - 'a'.charCodeAt();
+      if(!cur.children[ch]) {
+        cur.children[ch] = new TrieNode();
+      }
+      cur = cur.children[ch];
+    }
+    cur.isWord = true;
+  }
     
-//   search(word) {
-//     let cur = traverse(this.root, word);
-//     return cur !== null && cur.isWord;
-//   }
+  search(word) {
+    let cur = traverse(this.root, word);
+    return cur !== null && cur.isWord;
+  }
   
-//   startsWith(prefix) {
-//     return traverse(this.root, prefix) !== null;
-//   }
-// }
+  startsWith(prefix) {
+    return traverse(this.root, prefix) !== null;
+  }
+}
 
 // Without the array[26], 64% faster and 100% less space
 const traverse = (root, word) => {
