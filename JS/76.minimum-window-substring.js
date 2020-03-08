@@ -10,6 +10,15 @@
  * @param {string} t
  * @return {string}
  */
+/*
+用counter记录还有多少个字符需要匹配，如果是0的话更新min_len并收缩left，map记录
+当前还需要match哪些字符，right移动的时候更新map - 1，left收缩的时候更新map + 1
+
+counter: 记录还需要满足多少个t里的字符
+map: 记录当前t里面每个字符还需要满足多少
+min_len: 最小的window长度
+min_start: 最小字符串从哪里开始的
+*/
 var minWindow = function(s, t) {
   let map = new Map();
   let left = 0, right = 0, min_len = Infinity, min_start = 0;
