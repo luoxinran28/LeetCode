@@ -109,6 +109,7 @@
       * [158. Read N Characters Given Read4 II - Call multiple times](leetcode/data-structure/two-pointers/158.-read-n-characters-given-read4-ii-call-multiple-times.md)
       * [42. Trapping Rain Water](leetcode/data-structure/two-pointers/42.-trapping-rain-water.md)
     * [Sliding Window](leetcode/data-structure/sliding-window/README.md)
+      * [727. Minimum Window Subsequence](leetcode/data-structure/sliding-window/727.-minimum-window-subsequence.md)
       * [76. Minimum Window Substring](leetcode/data-structure/sliding-window/76.-minimum-window-substring.md)
       * [209. Minimum Size Subarray Sum](leetcode/data-structure/sliding-window/209.-minimum-size-subarray-sum.md)
       * [340. Longest Substring with At Most K Distinct Characters](leetcode/data-structure/sliding-window/340.-longest-substring-with-at-most-k-distinct-characters.md)
