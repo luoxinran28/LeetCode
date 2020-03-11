@@ -133,6 +133,8 @@
       * [261. Graph Valid Tree](leetcode/data-structure/union-find/261.-graph-valid-tree.md)
       * [547. Friend Circles](leetcode/data-structure/union-find/547.-friend-circles.md)
   * [常见问题按名分类 Common Questions By Name](leetcode/common-questions-by-name/README.md)
+    * [Sum](leetcode/common-questions-by-name/sum/README.md)
+      * [1. Two Sum](leetcode/common-questions-by-name/sum/1.-two-sum.md)
     * [Word](leetcode/common-questions-by-name/word.md)
     * [Interval](leetcode/common-questions-by-name/interval/README.md)
       * [986. Interval List Intersections](leetcode/common-questions-by-name/interval/986.-interval-list-intersections.md)
