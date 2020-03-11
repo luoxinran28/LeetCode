@@ -3,6 +3,8 @@
 * [找工作 2019](README.md)
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
+    * [Topological Sort](leetcode/data-structure/topological-sort/README.md)
+      * [207. Course Schedule](leetcode/data-structure/topological-sort/207.-course-schedule.md)
     * [Stack](leetcode/data-structure/stack/README.md)
       * [85. Maximal Rectangle](leetcode/data-structure/stack/85.-maximal-rectangle.md)
       * [84. Largest Rectangle in Histogram](leetcode/data-structure/stack/84.-largest-rectangle-in-histogram.md)
