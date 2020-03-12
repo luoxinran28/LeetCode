@@ -135,6 +135,7 @@
   * [常见问题按名分类 Common Questions By Name](leetcode/common-questions-by-name/README.md)
     * [Sum](leetcode/common-questions-by-name/sum/README.md)
       * [1. Two Sum](leetcode/common-questions-by-name/sum/1.-two-sum.md)
+      * [15. 3Sum](leetcode/common-questions-by-name/sum/15.-3sum.md)
     * [Word](leetcode/common-questions-by-name/word.md)
     * [Interval](leetcode/common-questions-by-name/interval/README.md)
       * [986. Interval List Intersections](leetcode/common-questions-by-name/interval/986.-interval-list-intersections.md)
