@@ -134,6 +134,7 @@
       * [547. Friend Circles](leetcode/data-structure/union-find/547.-friend-circles.md)
   * [常见问题按名分类 Common Questions By Name](leetcode/common-questions-by-name/README.md)
     * [Sum](leetcode/common-questions-by-name/sum/README.md)
+      * [259. 3Sum Smaller](leetcode/common-questions-by-name/sum/259.-3sum-smaller.md)
       * [16. 3Sum Closest](leetcode/common-questions-by-name/sum/16.-3sum-closest.md)
       * [1. Two Sum](leetcode/common-questions-by-name/sum/1.-two-sum.md)
       * [15. 3Sum](leetcode/common-questions-by-name/sum/15.-3sum.md)
