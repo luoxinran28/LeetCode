@@ -1,0 +1,61 @@
+/*
+ * @lc app=leetcode id=464 lang=javascript
+ *
+ * [464] Can I Win
+ */
+
+// @lc code=start
+/**
+ * @param {number} maxChoosableInteger
+ * @param {number} desiredTotal
+ * @return {boolean}
+ */
+var canIWin = function(maxChoosableInteger, desiredTotal) {
+    /**
+ * @param {number} maxChoosableInteger
+ * @param {number} desiredTotal
+ * @return {boolean}
+ */
+/*
+用记忆化搜索，类似这种游戏的题目，首先要用一个简单的例子，比如如果是(3, 4)的话，
+那p1选择1，p2就只能选择2或3，然后p1选择剩下的。这时候就会发现这是个permutation的
+题目。由于p1选1然后p2选2和p2选2然后p1选1其实是一样的效果，这时候就要记住这个选项
+避免重复运算。用一个state数组来记录当前这个数字是否被选择过，用一个map记录当前组合
+是否已经走过来减少重复计算。
+
+*/
+var canIWin = function(maxChoosableInteger, desiredTotal) {
+  if(Math.floor((maxChoosableInteger + 1) * maxChoosableInteger / 2) < desiredTotal)
+    return false;
+  if(desiredTotal < 0) return true;
+  
+  let map = new Map();
+  let state = Array(maxChoosableInteger + 1).fill(false);
+  return dfs(maxChoosableInteger, desiredTotal, state);
+  
+  function dfs(n, target, state) {
+    if(target < 0) {
+      return false;
+    }
+    let stateStr = state.join("");
+    if(map.has(stateStr)) {
+      return map.get(stateStr);
+    }
+    for(let i = 1; i <= n; i++) {
+      if(!state[i]) { // 找没选过的
+        state[i] = true;
+        if(target - i <= 0 || !dfs(n, target - i, state)) { // 当前已经满足或者下个玩家不能赢，那么我就赢了
+          map.set(stateStr, true);
+          state[i] = false; // 返回的时候放回这个数字
+          return true;
+        }
+        state[i] = false;
+      }
+    }
+    map.set(stateStr, false);
+    return false;
+  }
+};
+};
+// @lc code=end
+
