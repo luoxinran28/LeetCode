@@ -1,0 +1,43 @@
+/*
+ * @lc app=leetcode id=106 lang=javascript
+ *
+ * [106] Construct Binary Tree from Inorder and Postorder Traversal
+ */
+
+// @lc code=start
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/* 
+和105. Construct Binary Tree from Preorder and Inorder Traversal一样，
+用postorder最后一个元素确定根，inorder确定哪些是左或者右子树。区别在于，在postorder
+里面找左根位置需要减掉右子树的个数。可以用map存下inorder里面元素的位置来提高找根时间。
+*/
+var buildTree = function(inorder, postorder) {
+  
+  let map = new Map(); // Follow up: 存inorder的位置
+  inorder.forEach((e, i) => map.set(e, i));
+  return dfs(postorder.length - 1, 0, inorder.length - 1);
+  
+  function dfs(endPost, startIn, endIn) {
+    if(startIn > endIn || endPost < 0) {
+      return null;
+    }
+    
+    let root = new TreeNode(postorder[endPost]);
+    
+    let i = map.get(postorder[endPost]);
+    
+    let numberOfRightTree = endIn - i; // 右子树的个数
+    root.left = dfs(endPost - numberOfRightTree - 1, startIn, i - 1);
+    root.right = dfs(endPost - 1, i + 1, endIn);
+    
+    return root;
+  }
+};
+// @lc code=end
+
