@@ -40,6 +40,7 @@
       * [79. Word Search](leetcode/data-structure/backtracking/79.-word-search.md)
       * [93. Restore IP Addresses](leetcode/data-structure/backtracking/93.-restore-ip-addresses.md)
     * [Array](leetcode/data-structure/array/README.md)
+      * [406. Queue Reconstruction by Height](leetcode/data-structure/array/406.-queue-reconstruction-by-height.md)
       * [912. Sort an Array](leetcode/data-structure/array/912.-sort-an-array.md)
       * [973. K Closest Points to Origin](leetcode/data-structure/array/973.-k-closest-points-to-origin.md)
       * [88. Merge Sorted Array](leetcode/data-structure/array/88.-merge-sorted-array.md)
