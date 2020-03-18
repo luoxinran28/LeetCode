@@ -139,6 +139,8 @@
       * [261. Graph Valid Tree](leetcode/data-structure/union-find/261.-graph-valid-tree.md)
       * [547. Friend Circles](leetcode/data-structure/union-find/547.-friend-circles.md)
   * [常见问题按名分类 Common Questions By Name](leetcode/common-questions-by-name/README.md)
+    * [Palindrome](leetcode/common-questions-by-name/palindrome/README.md)
+      * [5. Longest Palindromic Substring](leetcode/common-questions-by-name/palindrome/5.-longest-palindromic-substring.md)
     * [Game](leetcode/common-questions-by-name/game/README.md)
       * [464. Can I Win](leetcode/common-questions-by-name/game/464.-can-i-win.md)
     * [Sum](leetcode/common-questions-by-name/sum/README.md)
