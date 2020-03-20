@@ -140,6 +140,7 @@
       * [547. Friend Circles](leetcode/data-structure/union-find/547.-friend-circles.md)
   * [常见问题按名分类 Common Questions By Name](leetcode/common-questions-by-name/README.md)
     * [Palindrome](leetcode/common-questions-by-name/palindrome/README.md)
+      * [647. Palindromic Substrings](leetcode/common-questions-by-name/palindrome/647.-palindromic-substrings.md)
       * [516. Longest Palindromic Subsequence](leetcode/common-questions-by-name/palindrome/516.-longest-palindromic-subsequence.md)
       * [5. Longest Palindromic Substring](leetcode/common-questions-by-name/palindrome/5.-longest-palindromic-substring.md)
     * [Game](leetcode/common-questions-by-name/game/README.md)
