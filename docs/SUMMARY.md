@@ -139,6 +139,8 @@
       * [261. Graph Valid Tree](leetcode/data-structure/union-find/261.-graph-valid-tree.md)
       * [547. Friend Circles](leetcode/data-structure/union-find/547.-friend-circles.md)
   * [常见问题按名分类 Common Questions By Name](leetcode/common-questions-by-name/README.md)
+    * [Stock](leetcode/common-questions-by-name/stock/README.md)
+      * [121. Best Time to Buy and Sell Stock](leetcode/common-questions-by-name/stock/121.-best-time-to-buy-and-sell-stock.md)
     * [Palindrome](leetcode/common-questions-by-name/palindrome/README.md)
       * [647. Palindromic Substrings](leetcode/common-questions-by-name/palindrome/647.-palindromic-substrings.md)
       * [516. Longest Palindromic Subsequence](leetcode/common-questions-by-name/palindrome/516.-longest-palindromic-subsequence.md)
