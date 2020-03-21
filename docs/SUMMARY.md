@@ -53,6 +53,7 @@
       * [27. Remove Element](leetcode/data-structure/array/27.-remove-element.md)
       * [896. Monotonic Array](leetcode/data-structure/array/896.-monotonic-array.md)
       * [121. Best Time to Buy and Sell Stock](leetcode/data-structure/array/121.-best-time-to-buy-and-sell-stock.md)
+      * [152. Maximum Product Subarray](leetcode/data-structure/array/152.-maximum-product-subarray.md)
       * [53. Maximum Subarray](leetcode/data-structure/array/53.-maximum-subarray.md)
     * [Binary Search](leetcode/data-structure/binary-search-1/README.md)
       * [4. Median of Two Sorted Arrays](leetcode/data-structure/binary-search-1/4.-median-of-two-sorted-arrays.md)
