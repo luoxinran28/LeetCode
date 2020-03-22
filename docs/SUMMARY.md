@@ -42,6 +42,7 @@
       * [79. Word Search](leetcode/data-structure/backtracking/79.-word-search.md)
       * [93. Restore IP Addresses](leetcode/data-structure/backtracking/93.-restore-ip-addresses.md)
     * [Array](leetcode/data-structure/array/README.md)
+      * [229. Majority Element II](leetcode/data-structure/array/229.-majority-element-ii.md)
       * [169. Majority Element](leetcode/data-structure/array/169.-majority-element.md)
       * [406. Queue Reconstruction by Height](leetcode/data-structure/array/406.-queue-reconstruction-by-height.md)
       * [912. Sort an Array](leetcode/data-structure/array/912.-sort-an-array.md)
