@@ -1,0 +1,82 @@
+/*
+ * @lc app=leetcode id=449 lang=javascript
+ *
+ * [449] Serialize and Deserialize BST
+ */
+
+// @lc code=start
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+
+/**
+ * Encodes a tree to a single string.
+ *
+ * @param {TreeNode} root
+ * @return {string}
+ */
+
+/*
+可以利用前序遍历可以得到以下形式的string：
+root (<root) (<root) |separator| (>root) (>root) (>root) (>root)
+*/
+var serialize = function(root) {
+  if(root === null) return null;
+  let res = "";
+  dfs(root);
+  return res.trim();
+  
+  function dfs(root) {
+    if(root === null) {
+      return;
+    }
+    res += root.val + " ";
+    dfs(root.left);
+    dfs(root.right);
+  }
+  
+};
+
+/**
+ * Decodes your encoded data to tree.
+ *
+ * @param {string} data
+ * @return {TreeNode}
+ */
+/*
+对于当前root，后面的数值如果小于root.val，说明是属于左子树，如果大于就是右子树。
+
+*/
+var deserialize = function(data) {
+  if(data === null || data === "") return null;
+  let q = data.split(" ").map(e => parseInt(e));
+  return dfs(q);
+  
+  function dfs(q) {
+    if(q === null || q.length === 0) return null;
+    let root = new TreeNode(q.shift());
+    let qLeft = [];
+    while(q.length > 0 && q[0] < root.val) {
+      qLeft.push(q.shift());
+    }
+    root.left = dfs(qLeft);
+    root.right = dfs(q);
+    return root;
+  }
+};
+
+/**
+ * Your functions will be called as such:
+ * deserialize(serialize(root));
+ */
+
+/**
+ * Your functions will be called as such:
+ * deserialize(serialize(root));
+ */
+// @lc code=end
+
