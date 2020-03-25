@@ -74,6 +74,7 @@
       * [140. Word Break II](leetcode/data-structure/memoriazation/140.-word-break-ii.md)
       * [523. Continuous Subarray Sum](leetcode/data-structure/memoriazation/523.-continuous-subarray-sum.md)
     * [Tree](leetcode/data-structure/tree/README.md)
+      * [449. Serialize and Deserialize BST](leetcode/data-structure/tree/449.-serialize-and-deserialize-bst.md)
       * [106. Construct Binary Tree from Inorder and Postorder Traversal](leetcode/data-structure/tree/106.-construct-binary-tree-from-inorder-and-postorder-traversal.md)
       * [105. Construct Binary Tree from Preorder and Inorder Traversal](leetcode/data-structure/tree/105.-construct-binary-tree-from-preorder-and-inorder-traversal.md)
       * [669. Trim a Binary Search Tree](leetcode/data-structure/tree/669.-trim-a-binary-search-tree.md)
