@@ -133,6 +133,7 @@
       * [340. Longest Substring with At Most K Distinct Characters](leetcode/data-structure/sliding-window/340.-longest-substring-with-at-most-k-distinct-characters.md)
       * [395. Longest Substring with At Least K Repeating Characters](leetcode/data-structure/sliding-window/395.-longest-substring-with-at-least-k-repeating-characters.md)
     * [DFS](leetcode/data-structure/dfs/README.md)
+      * [37. Sudoku Solver](leetcode/data-structure/dfs/37.-sudoku-solver.md)
       * [131. Palindrome Partitioning](leetcode/data-structure/dfs/131.-palindrome-partitioning.md)
       * [46. Permutations I/II](leetcode/data-structure/dfs/46.-permutations-i-ii.md)
       * [78. Subsets I/II](leetcode/data-structure/dfs/78.-subsets-i-ii.md)
