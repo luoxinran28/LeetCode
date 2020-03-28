@@ -1,0 +1,59 @@
+/*
+ * @lc app=leetcode id=37 lang=javascript
+ *
+ * [37] Sudoku Solver
+ */
+
+// @lc code=start
+/**
+ * @param {character[][]} board
+ * @return {void} Do not return anything, modify board in-place instead.
+ */
+
+/*
+回溯法，注意检查棋盘的时候，当前块的位置是[row / 3 * 3, col / 3 * 3]，
+如果现在的数字是valid的，就回溯dfs，dfs返回boolean，如果返回true就直接
+返回，false就就重置当前位置。
+*/
+var solveSudoku = function(board) {
+  if(board === null || board[0].length === 0) return ;
+  
+  let m = board.length;
+  let n = board[0].length;
+  
+  return dfs(board);
+  
+  function dfs(board) {
+    for(let i = 0; i < m; i++) {
+      for(let j = 0; j < n; j++) {
+        if(board[i][j] !== '.') continue;
+        for(let k = 1; k <= 9; k++) {
+          if(isValid(board, i, j, k.toString())) {
+            board[i][j] = k.toString();
+            if(dfs(board)) return true;
+            board[i][j] = '.';
+          }
+          
+        }
+        return false;
+      }
+    }
+    return true
+  }
+    
+  function isValid(board, row, col, ch) {
+    let curBlockRow = Math.floor(row / 3) * 3;
+    let curBlockCol = Math.floor(col / 3) * 3;
+    
+    for(let i = 0; i < 9; i++) {
+      if(board[i][col] === ch) return false;
+      if(board[row][i] === ch) return false;
+      if(board[curBlockRow + Math.floor(i / 3)][curBlockCol + i % 3] === ch) {
+        return false; 
+      }
+    }
+    return true;
+  }
+};
+// @lc code=end
+
