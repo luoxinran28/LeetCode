@@ -102,6 +102,7 @@
       * [1086. High Five](leetcode/data-structure/heap/1086.-high-five.md)
       * [253. Meeting Rooms II](leetcode/data-structure/heap/253.-meeting-rooms-ii.md)
     * [Simulation](leetcode/data-structure/simulation/README.md)
+      * [8. String to Integer \(atoi\)](leetcode/data-structure/simulation/8.-string-to-integer-atoi.md)
       * [29. Divide Two Integers](leetcode/data-structure/simulation/29.-divide-two-integers.md)
       * [68. Text Justification](leetcode/data-structure/simulation/68.-text-justification.md)
       * [692. Top K Frequent Words](leetcode/data-structure/simulation/692.-top-k-frequent-words.md)
