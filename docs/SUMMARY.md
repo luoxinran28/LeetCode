@@ -144,6 +144,7 @@
       * [51. N-Queens](leetcode/data-structure/dfs/51.-n-queens.md)
       * [399. Evaluate Division](leetcode/data-structure/dfs/399.-evaluate-division.md)
     * [BFS](leetcode/data-structure/bfs/README.md)
+      * [785. Is Graph Bipartite?](leetcode/data-structure/bfs/785.-is-graph-bipartite.md)
       * [127. Word Ladder](leetcode/data-structure/bfs/127.-word-ladder.md)
       * [126. Word Ladder II](leetcode/data-structure/bfs/126.-word-ladder-ii.md)
       * [994. Rotting Oranges](leetcode/data-structure/bfs/994.-rotting-oranges.md)
