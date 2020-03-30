@@ -11,6 +11,7 @@
       * [85. Maximal Rectangle](leetcode/data-structure/stack/85.-maximal-rectangle.md)
       * [84. Largest Rectangle in Histogram](leetcode/data-structure/stack/84.-largest-rectangle-in-histogram.md)
     * [Trie](leetcode/data-structure/trie/README.md)
+      * [211. Add and Search Word - Data structure design](leetcode/data-structure/trie/211.-add-and-search-word-data-structure-design.md)
       * [642. Design Search Autocomplete System](leetcode/data-structure/trie/642.-design-search-autocomplete-system.md)
     * [Deque](leetcode/data-structure/deque/README.md)
       * [239. Sliding Window Maximum](leetcode/data-structure/deque/239.-sliding-window-maximum.md)
