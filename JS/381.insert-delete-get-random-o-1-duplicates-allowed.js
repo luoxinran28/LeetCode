@@ -77,7 +77,7 @@ RandomizedCollection.prototype.getRandom = function() {
   return this.data[idx][0];
 };
 
-/** 
+/** 8
  * Your RandomizedCollection object will be instantiated and called as such:
  * var obj = new RandomizedCollection()
  * var param_1 = obj.insert(val)
