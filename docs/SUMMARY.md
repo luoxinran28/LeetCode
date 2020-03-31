@@ -3,6 +3,8 @@
 * [找工作 2019](README.md)
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
+    * [Quick Question](leetcode/data-structure/quick-question/README.md)
+      * [67. Add Binary](leetcode/data-structure/quick-question/67.-add-binary.md)
     * [Presum](leetcode/data-structure/presum/README.md)
       * [560. Subarray Sum Equals K](leetcode/data-structure/presum/560.-subarray-sum-equals-k.md)
     * [Topological Sort](leetcode/data-structure/topological-sort/README.md)
