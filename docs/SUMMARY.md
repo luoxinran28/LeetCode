@@ -14,6 +14,7 @@
     * [Topological Sort](leetcode/data-structure/topological-sort/README.md)
       * [207. Course Schedule](leetcode/data-structure/topological-sort/207.-course-schedule.md)
     * [Stack](leetcode/data-structure/stack/README.md)
+      * [716. Max Stack](leetcode/data-structure/stack/716.-max-stack.md)
       * [739. Daily Temperatures](leetcode/data-structure/stack/739.-daily-temperatures.md)
       * [394. Decode String](leetcode/data-structure/stack/394.-decode-string.md)
       * [85. Maximal Rectangle](leetcode/data-structure/stack/85.-maximal-rectangle.md)
