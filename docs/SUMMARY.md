@@ -4,6 +4,7 @@
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
     * [Quick Question](leetcode/data-structure/quick-question/README.md)
+      * [28. Implement strStr\(\)](leetcode/data-structure/quick-question/28.-implement-strstr.md)
       * [12. Integer to Roman](leetcode/data-structure/quick-question/12.-integer-to-roman.md)
       * [13. Roman to Integer](leetcode/data-structure/quick-question/13.-roman-to-integer.md)
       * [67. Add Binary](leetcode/data-structure/quick-question/67.-add-binary.md)
