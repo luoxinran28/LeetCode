@@ -4,6 +4,7 @@
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
     * [Quick Question](leetcode/data-structure/quick-question/README.md)
+      * [31. Next Permutation](leetcode/data-structure/quick-question/31.-next-permutation.md)
       * [243. Shortest Word Distance](leetcode/data-structure/quick-question/243.-shortest-word-distance.md)
       * [28. Implement strStr\(\)](leetcode/data-structure/quick-question/28.-implement-strstr.md)
       * [12. Integer to Roman](leetcode/data-structure/quick-question/12.-integer-to-roman.md)
