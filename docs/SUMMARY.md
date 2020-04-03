@@ -4,6 +4,8 @@
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
     * [Quick Question](leetcode/data-structure/quick-question/README.md)
+      * [171. Excel Sheet Column Number](leetcode/data-structure/quick-question/171.-excel-sheet-column-number.md)
+      * [168. Excel Sheet Column Title](leetcode/data-structure/quick-question/168.-excel-sheet-column-title.md)
       * [31. Next Permutation](leetcode/data-structure/quick-question/31.-next-permutation.md)
       * [243. Shortest Word Distance](leetcode/data-structure/quick-question/243.-shortest-word-distance.md)
       * [28. Implement strStr\(\)](leetcode/data-structure/quick-question/28.-implement-strstr.md)
