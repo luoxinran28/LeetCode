@@ -119,6 +119,7 @@
       * [1086. High Five](leetcode/data-structure/heap/1086.-high-five.md)
       * [253. Meeting Rooms II](leetcode/data-structure/heap/253.-meeting-rooms-ii.md)
     * [Simulation](leetcode/data-structure/simulation/README.md)
+      * [57. Insert Interval](leetcode/data-structure/simulation/57.-insert-interval.md)
       * [202. Happy Number](leetcode/data-structure/simulation/202.-happy-number.md)
       * [8. String to Integer \(atoi\)](leetcode/data-structure/simulation/8.-string-to-integer-atoi.md)
       * [29. Divide Two Integers](leetcode/data-structure/simulation/29.-divide-two-integers.md)
