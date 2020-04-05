@@ -60,6 +60,7 @@
       * [79. Word Search](leetcode/data-structure/backtracking/79.-word-search.md)
       * [93. Restore IP Addresses](leetcode/data-structure/backtracking/93.-restore-ip-addresses.md)
     * [Array](leetcode/data-structure/array/README.md)
+      * [245 243 244. Shortest Word Distance II/I/III](leetcode/data-structure/array/245-243-244.-shortest-word-distance-ii-i-iii.md)
       * [525. Contiguous Array](leetcode/data-structure/array/525.-contiguous-array.md)
       * [253. Meeting Rooms II](leetcode/data-structure/array/253.-meeting-rooms-ii.md)
       * [825. Friends Of Appropriate Ages](leetcode/data-structure/array/825.-friends-of-appropriate-ages.md)
