@@ -157,6 +157,7 @@
       * [340. Longest Substring with At Most K Distinct Characters](leetcode/data-structure/sliding-window/340.-longest-substring-with-at-most-k-distinct-characters.md)
       * [395. Longest Substring with At Least K Repeating Characters](leetcode/data-structure/sliding-window/395.-longest-substring-with-at-least-k-repeating-characters.md)
     * [DFS](leetcode/data-structure/dfs/README.md)
+      * [254. Factor Combinations](leetcode/data-structure/dfs/254.-factor-combinations.md)
       * [410. Split Array Largest Sum](leetcode/data-structure/dfs/410.-split-array-largest-sum.md)
       * [17. Letter Combinations of a Phone Number](leetcode/data-structure/dfs/17.-letter-combinations-of-a-phone-number.md)
       * [37. Sudoku Solver](leetcode/data-structure/dfs/37.-sudoku-solver.md)
