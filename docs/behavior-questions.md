@@ -12,7 +12,7 @@ I graduated from University of Utah for my Master of Computer Science degree in 
 * Why should we hire you? 
 * What makes you the best candidate? 
 
-I believe XXX company has created a series of great products such as YYY and ZZZ to help the world a better place to live. A lot of people's lifestyle has been changed because of these products. I think my experience on the web development would be a great fit for these products and I believe I can I do a lot of things in XXX and will enjoy the process to create the tools to help more people on a bigger impact.
+I believe XXX company has a series of great products such as YYY and ZZZ to help the world a better place to live. A lot of people's lifestyle has been changed because of these products. I think my experience on the web development would be a great fit for these products and I believe I can I do a lot of things in XXX and will enjoy the process to create the tools to help more people on a bigger impact.
 
 ## Can you briefly introduce one of your favorite project
 
@@ -42,13 +42,13 @@ My current position gives a lot of freedom to do our own things. They fully supp
 
 #### What is your biggest strength
 
-I consider myself a quick learner and a knowledge lover. As a front-end developer, we always have some new tools coming out each and I always learn these tools very fast. Also I am a self-motivated person to learn new things. I am also an easy-going person and easy to communicate any coming problems.
+I consider myself a quick learner and a knowledge lover. As a front-end developer, we always have some new tools coming out each year and I always learn these tools very fast. Also I am a self-motivated person to learn new things. I am also an easy-going person and easy to communicate any coming problems.
 
 ## What do you like the least for your current/previous position?
 
 #### What’s the biggest mistake you’ve ever made in your previous job?
 
-So I've been working in this company for about more than four years, if I have anything I really don't like, I would've left this company. However, if I have to say something that's not pefect, I would say we have too many daily meetings. But I don't really think this is a big problem because I believe communication is an important factor in the work.
+So I've been working in this company for about five years, if I have anything I really don't like, I would've left this company. However, if I have to say something that's not perfect, I would say we have too many daily meetings. But I don't really think this is a big problem because I believe communication is an important factor in the work.
 
 #### What is your biggest weakness?
 
@@ -66,5 +66,5 @@ It's great thing to see if the conflict happens because it means everybody has t
 * Describe a difficult situation in your previous job?
 * What would you do if there’s limited resources/time\(tight deadline\)?
 
-As a Computer Science student with a Master degree, I always want to try something fancy to show my ability in the web development, even though it's not quite necessasary. Sometimes I'm too focsing on the detail to improve the small part of the performace and ignoreed the overall big picture. Sometimes this could affect our schedule because of this. But usually after knowing more about the project in general through several conversaions with the colleages, I could change my mind of focusing on too much in detail because getting things done is more important than getting things perfectly.
+As a Computer Science background, I always want to try something fancy to show my ability in the web development, even though it's not quite necessary. Sometimes I'm too focusing on the detail to improve the small part of the performance and ignored the overall big picture. Sometimes this could affect our schedule because of this. But usually after knowing more about the project in general through several conversations with the colleagues, I could change my mind of focusing on too much in detail because getting things done is more important than getting things perfectly.
 
