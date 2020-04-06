@@ -43,6 +43,7 @@
     * [Segment Tree](leetcode/data-structure/segment-tree/README.md)
       * [307. Range Sum Query - Mutable](leetcode/data-structure/segment-tree/307.-range-sum-query-mutable.md)
     * [Dp](leetcode/data-structure/dp/README.md)
+      * [10. Regular Expression Matching](leetcode/data-structure/dp/10.-regular-expression-matching.md)
       * [279. Perfect Squares](leetcode/data-structure/dp/279.-perfect-squares.md)
       * [55. Jump Game](leetcode/data-structure/dp/55.-jump-game.md)
       * [62. Unique Paths I, II, III](leetcode/data-structure/dp/62.-unique-paths-i-ii-iii.md)
