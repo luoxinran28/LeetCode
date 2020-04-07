@@ -221,5 +221,8 @@
   * [1268. Search Suggestions System](system-design/1268.-search-suggestions-system.md)
   * [Design Netflix](system-design/design-netflix.md)
 * [Behavior Questions](behavior-questions.md)
-* [Front-end Common Question](front-end-common-question.md)
+* [Front-end Common Question Notes](front-end-common-question/README.md)
+  * [HTML](front-end-common-question/html.md)
+  * [CSS](front-end-common-question/css.md)
+  * [JS](front-end-common-question/js.md)
 
