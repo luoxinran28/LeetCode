@@ -221,5 +221,5 @@
   * [1268. Search Suggestions System](system-design/1268.-search-suggestions-system.md)
   * [Design Netflix](system-design/design-netflix.md)
 * [Behavior Questions](behavior-questions.md)
-* [重点](zhong-dian.md)
+* [Front-end Common Question](front-end-common-question.md)
 
