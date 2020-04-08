@@ -64,12 +64,28 @@ All the above-mentioned technologies are key-value storage mechanisms on the cli
 
  **Placing `<link>`s in the `<head>`**
 
-* When a page first loads, HTML and CSS are being _parsed_ simultaneously; HTML creates the DOM \(Document Object Model\) and CSS creates the CSSOM \(CSS Object Model\). Both are needed to create the visuals in a website, allowing for a quick "first meaningful paint" timing
+* When a page first loads, HTML and CSS are being **parsed** simultaneously; HTML creates the DOM \(Document Object Model\) and CSS creates the CSSOM \(CSS Object Model\). Both are needed to create the visuals in a website, allowing for a quick "first meaningful paint" timing
 * This progressive rendering is a category optimization sites are measured in their performance scores. Putting stylesheets near the bottom of the document is what prohibits progressive rendering in many browsers.
 
  **Placing `<script>`s just before `</body>`**
 
- `<script>`s block HTML parsing while they are being downloaded and executed. Placing the scripts at the bottom will allow the HTML to be parsed and displayed to the user first.
+ `<script>`s block HTML parsing while they are being **downloaded and executed**. Placing the scripts at the bottom will allow the HTML to be parsed and displayed to the user first. Also, placing `<script>`s at the bottom means that the browser cannot start downloading the scripts until the entire document is parsed. This ensures your code that needs to manipulate DOM elements will not throw and error and halt the entire script. If you need to put `<script>` in the `<head>`, use the `defer` attribute, which will achieve the same effect of downloading and running the script only after the HTML is parsed.
 
+#### What is progressive rendering?
 
+Progressive rendering is  to improve the performance of a web pages \(in particular, improve perceived load time\) to render content for display as quickly as possible.
+
+Examples of such techniques:
+
+* Lazy loading of images - Images on the page are not loaded all at once. JavaScript will be used to load an image when the user scrolls into the part of the page that displays the image.
+* Prioritizing visible content \(or above-the-fold rendering\) - Include only the minimum CSS/content/scripts necessary for the amount of page that would be rendered in the users browser first to display as quickly as possible, you can then use deferred scripts or listen for the `DOMContentLoaded`/`load` event to load in other resources and content.
+* Async HTML fragments - Flushing parts of the HTML to the browser as the page is constructed on the back end. More details on the technique can be found [here](http://www.ebaytechblog.com/2014/12/08/async-fragments-rediscovering-progressive-html-rendering-with-marko/).
+
+#### Why you would use a `srcset` attribute in an image tag?
+
+To serve different images to users depending on their device display width. Retina display v.s. Low-end devices.  For example: `<img srcset="small.jpg 500w, medium.jpg 1000w, large.jpg 2000w" src="..." alt="">`
+
+#### Have you used different HTML templating languages before?
+
+Yes, Pug, AEM HTL, and Handlebars.
 
