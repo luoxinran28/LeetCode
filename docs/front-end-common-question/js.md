@@ -398,5 +398,15 @@ var foo = function() {
 
 The value of `this` gets set at the time of the function creation and can't change after that.
 
+#### How can you share code between files?
 
+ On the client \(browser environment\), as long as the variables/functions are declared in the global scope \(`window`\), all scripts can refer to them.
+
+On the server \(Node.js\), the common way has been to use CommonJS  by attaching them to the `module.exports` object.
+
+ES2015 defines a module syntax which aims to replace both AMD and CommonJS.
+
+#### Why you might want to create static class members?
+
+Static properties are typically configuration variables and static methods are usually pure utility functions which do not depend on the state of the instance.
 
