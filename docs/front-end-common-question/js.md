@@ -394,3 +394,9 @@ var foo = function() {
 };
 ```
 
+#### What advantage is there for using the arrow syntax for a method in a constructor?
+
+The value of `this` gets set at the time of the function creation and can't change after that.
+
+
+
