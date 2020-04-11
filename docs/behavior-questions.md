@@ -2,15 +2,7 @@
 
 ## Can you give me a short self introduction please?
 
-I graduated from University of Utah for my Master of Computer Science degree in 2015. And I also got my MBA degree from Indiana University in 2019. Currently, I am working for Dell EMC for about 5 years as a Front-end developer. My job responsibility is to lead a front-end team, and create pages and reusable components for dellemc.com and legacy shop.dellemc.com. Our tech stack is called AEM which is developing under an Adobe framework. The current project I'm working on is to migrate the existing code from a legacy system to a new system, which involves the new design for hundreds of pages across more than 20 locales. Please feel free to ask me the details if you want to know more.
-
-Mobile layout. browser support. Performance.
-
-
-
-
-
-Hi. My name is Sean. In 2015, I graduated from University of Utah for my Master of Computer Science degree. My major focus was on Data Analysis. Then, I found my current job in Dell EMC as a Software Engineer to build their official Website. Dell EMC is the global leader in Storage, Servers, and Cloud management. I was helping them to display and sell their products on dellemc.com. I like learning things. I did both Back-end and Front-end in my job and earned my MBA degree sponsored by my company.
+Hi. My name is Sean. In 2015, I graduated from University of Utah for my Master of Computer Science degree. My major focus was on Data Analysis. Then, I found my current job in Dell EMC as a Software Engineer to build their official Website. Dell EMC is the global leader in Storage, Servers, and Cloud management. I was helping them to display and sell their products and services on dellemc.com. I like learning things. I did both Back-end and Front-end in my job and earned my MBA degree sponsored by my company.
 
 In my day-to-day work, I am a front-end developer in the majority of the time. I work very closely with my Product Manager and User-experience Designers. We use a Content Management System under the Adobe framework to create the components for the marketing users so they can create page content by using these components. We get feedback directly from them and improve our page component iteratively in the Agile development model. 
 
@@ -18,7 +10,13 @@ As a team lead, I need to estimate the development work size and prioritize the 
 
 Working in such global wide company, I am happy to meet the people from all different countries such as Argentina, Columbia, and India. The diversity pushes us more to schedule and coordinate our work well. I believe my experience could help XXX expand your business and develop the best product experience in the work wide. Thank you.
 
- 
+你好，我叫罗欣然。在2015年的时候，我从犹他大学毕业，当时主要学习数据分析方向。毕业之后我就作为软件工程师加入了现在这家公司，戴尔EMC。戴尔EMC是全球存储器、服务器和云管理的领导者。而我主要帮助在dellemc.com上面展示并销售他们的产品及服务。我很喜欢学习，我从事过前后端的开发，并在公司的资助下，我拿到了我的MBA学位。
+
+日常工作中，我主要是一名前端开发人员。我需要跟的产品经理以及设计进行合作，使用Adobe旗下的一款内容管理系统来创造组件，那市场部门的同事们就使用我们创造的组件来创立网站页面去提供他们展示的包括文字、图片、文档、视频等内容。在此期间，我们就根据他们的使用反馈来迭代我们日常开发。这里我们使用的是敏捷开发模型进行日常的迭代。
+
+作为一名小组领导，我需要跟我的经理一起预估我们的开发时间以及优先级，我需要审查我同事的代码并且将我们的工作在展示会议上进行演示。我们的前端代码必须要考虑如浏览器兼容性、国际语言、性能及阅读顺序等等情况。我最近的一个项目就是将我们主页的浏览器内核从Google替换到Coveo框架，由于这个将影响到整个网站的用户体验，我们要不断的跟不同部门去沟通解释可能受到影响的地方。另一个项目是创建一个表单组件，用来代替现在用html写死的表单，这样我们的市场部门就可以重复使用这个组件来重复创造相同体验的表单。
+
+在这么一个全球影响力的公司上班，我很高兴能够和全时间各个地方的同事一起工作，他们来自例如阿根廷，哥伦比亚，印度等国家。这种地域的多样性就要求我们必须要计划和协作都配合得很好。不过我相信我的工作经历以及产品开发的经验一定将会对贵公司展开全球业务以及提升国际化的产品体验有非常大的帮助。谢谢。
 
 ## Why are you interested in our Company?
 
