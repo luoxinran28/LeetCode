@@ -30,7 +30,7 @@ The top traffic after 1 year = 3.75M \* 10mpbs = 37.5Pb/s
 
 ## Application:
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 ## Kilobit:
 
@@ -48,16 +48,16 @@ The top traffic after 1 year = 3.75M \* 10mpbs = 37.5Pb/s
 
 再考虑限制性条件（Necessary），假设这个推荐模块每10分钟重新为每个用户推荐一次，结合之前计算出的三个月后的高峰用户数，可以得到三个月后的高峰QPS（Query Per Second）。
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 
 首先看看最直观的算法，我们将两个用户喜欢的电影一一比较，就可以得到两个用户之间的Similarity。但是这种算法的复杂度非常高，进行了3\*2+3\*4=18次比较，这种算法无法满足需求，所以要对算法进行进化（Evolve）。
 
   
 
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 我们可以通过建立倒排索引来减小计算复杂度，从而提升性能。即从每个用户喜欢哪些电影转变为每部电影被哪些用户喜欢。我们知道用户u1喜欢电影m1、m3和m7，我们就可以通过查询倒排索引，找到也喜欢m1、m3和m7的用户，这些用户都和u1相似。这样我们只进行3次计算就得到了其它用户和u1的similarity，大大降低了算法的时间复杂度。
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 

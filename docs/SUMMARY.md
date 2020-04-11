@@ -212,6 +212,8 @@
       * [32. Longest Valid Parentheses](leetcode/common-questions-by-name/parentheses/32.-longest-valid-parentheses.md)
       * [22. Generate Parentheses](leetcode/common-questions-by-name/parentheses/22.-generate-parentheses.md)
       * [301. Remove Invalid Parentheses](leetcode/common-questions-by-name/parentheses/301.-remove-invalid-parentheses.md)
+* [Object Oriented Design](object-oriented-design/README.md)
+  * [Principles](object-oriented-design/principles.md)
 * [System Design](system-design/README.md)
   * [381. Insert Delete GetRandom O\(1\) - Duplicates allowed](system-design/381.-insert-delete-getrandom-o-1-duplicates-allowed.md)
   * [380. Insert Delete GetRandom O\(1\)](system-design/380.-insert-delete-getrandom-o-1.md)
