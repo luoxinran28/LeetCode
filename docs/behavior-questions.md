@@ -6,6 +6,20 @@ I graduated from University of Utah for my Master of Computer Science degree in 
 
 Mobile layout. browser support. Performance.
 
+
+
+
+
+Hi. My name is Sean. In 2015, I graduated from University of Utah for my Master of Computer Science degree. My major focus was on Data Analysis. Then, I found my current job in Dell EMC as a Software Engineer to build their official Website. Dell EMC is the global leader in Storage, Servers, and Cloud management. I was helping them to display and sell their products on dellemc.com. I like learning things. I did both Back-end and Front-end in my job and earned my MBA degree sponsored by my company.
+
+In my day-to-day work, I am a front-end developer in the majority of the time. I work very closely with my Product Manager and User-experience Designers. We use a Content Management System under the Adobe framework to create the components for the marketing users so they can create page content by using these components. We get feedback directly from them and improve our page component iteratively in the Agile development model. 
+
+As a team lead, I need to estimate the development work size and prioritize the tasks with my manager. And I review the colleagues' code and demonstrate the work in our Sprint Demo meeting. We need to consider all kinds of scenarios such as browser compatibility, languages, and cultures such as right-to-left reading order. The most recent project I am working on is to replace the search engine kernel from Google to Coveo framework, which requires us to coordinates with several other teams because this is impacting our customers' experience in the company wide. Another project is to create a form component to replace the current hard-coded forms so the marketing people can have more control to repetitively create the forms in the same experience.
+
+Working in such global wide company, I am happy to meet the people from all different countries such as Argentina, Columbia, and India. The diversity pushes us more to schedule and coordinate our work well. I believe my experience could help XXX expand your business and develop the best product experience in the work wide. Thank you.
+
+ 
+
 ## Why are you interested in our Company?
 
 * Why did you apply? 
