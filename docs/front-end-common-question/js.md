@@ -327,12 +327,13 @@ The downsides:
 
 #### What is the extent of your experience with Promises?
 
-A promise is an object that may produce a single value sometime in the future. A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+A promise represents the **future result of an asynchronous operation**. A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
 
 **Pros**
 
 * Avoid callback hell which can be unreadable.
 * Makes it easy to write sequential asynchronous code that is readable with `.then()`.
+* Better tracking the chain functions errors by using catch than the usual try\(\) block.
 * Makes it easy to write parallel asynchronous code with `Promise.all()`.
 * With promises, these scenarios which are present in callbacks-only coding, will not happen:
   * Call the callback too early
