@@ -29,6 +29,7 @@
     * [Deque](leetcode/data-structure/deque/README.md)
       * [239. Sliding Window Maximum](leetcode/data-structure/deque/239.-sliding-window-maximum.md)
     * [Linked List](leetcode/data-structure/linked-list/README.md)
+      * [369. Plus One Linked List](leetcode/data-structure/linked-list/369.-plus-one-linked-list.md)
       * [206. Reverse Linked List](leetcode/data-structure/linked-list/206.-reverse-linked-list.md)
       * [25. Reverse Nodes in k-Group](leetcode/data-structure/linked-list/25.-reverse-nodes-in-k-group.md)
       * [143. Reorder List](leetcode/data-structure/linked-list/143.-reorder-list.md)
