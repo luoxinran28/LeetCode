@@ -4,6 +4,7 @@
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
     * [Quick Question](leetcode/data-structure/quick-question/README.md)
+      * [277. Find the Celebrity](leetcode/data-structure/quick-question/277.-find-the-celebrity.md)
       * [171. Excel Sheet Column Number](leetcode/data-structure/quick-question/171.-excel-sheet-column-number.md)
       * [168. Excel Sheet Column Title](leetcode/data-structure/quick-question/168.-excel-sheet-column-title.md)
       * [31. Next Permutation](leetcode/data-structure/quick-question/31.-next-permutation.md)
