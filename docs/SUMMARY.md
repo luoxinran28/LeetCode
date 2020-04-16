@@ -3,6 +3,8 @@
 * [找工作 2019](README.md)
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
+    * [String](leetcode/data-structure/string/README.md)
+      * [6. ZigZag Conversion](leetcode/data-structure/string/6.-zigzag-conversion.md)
     * [Quick Question](leetcode/data-structure/quick-question/README.md)
       * [277. Find the Celebrity](leetcode/data-structure/quick-question/277.-find-the-celebrity.md)
       * [171. Excel Sheet Column Number](leetcode/data-structure/quick-question/171.-excel-sheet-column-number.md)
