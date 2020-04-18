@@ -218,6 +218,7 @@
     * [Interval](leetcode/common-questions-by-name/interval/README.md)
       * [986. Interval List Intersections](leetcode/common-questions-by-name/interval/986.-interval-list-intersections.md)
     * [Parentheses](leetcode/common-questions-by-name/parentheses/README.md)
+      * [1249. Minimum Remove to Make Valid Parentheses](leetcode/common-questions-by-name/parentheses/1249.-minimum-remove-to-make-valid-parentheses.md)
       * [20. Valid Parentheses](leetcode/common-questions-by-name/parentheses/20.-valid-parentheses.md)
       * [32. Longest Valid Parentheses](leetcode/common-questions-by-name/parentheses/32.-longest-valid-parentheses.md)
       * [22. Generate Parentheses](leetcode/common-questions-by-name/parentheses/22.-generate-parentheses.md)
