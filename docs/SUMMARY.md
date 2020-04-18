@@ -61,6 +61,7 @@
       * [139. Word Break](leetcode/data-structure/dp/139.-word-break.md)
       * [96. Unique Binary Search Trees](leetcode/data-structure/dp/96.-unique-binary-search-trees.md)
     * [Backtracking](leetcode/data-structure/backtracking/README.md)
+      * [332. Reconstruct Itinerary](leetcode/data-structure/backtracking/332.-reconstruct-itinerary.md)
       * [114. Flatten Binary Tree to Linked List](leetcode/data-structure/backtracking/114.-flatten-binary-tree-to-linked-list.md)
       * [212. Word Search II](leetcode/data-structure/backtracking/212.-word-search-ii.md)
       * [79. Word Search](leetcode/data-structure/backtracking/79.-word-search.md)
