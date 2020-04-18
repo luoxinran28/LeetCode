@@ -167,6 +167,7 @@
       * [340. Longest Substring with At Most K Distinct Characters](leetcode/data-structure/sliding-window/340.-longest-substring-with-at-most-k-distinct-characters.md)
       * [395. Longest Substring with At Least K Repeating Characters](leetcode/data-structure/sliding-window/395.-longest-substring-with-at-least-k-repeating-characters.md)
     * [DFS](leetcode/data-structure/dfs/README.md)
+      * [341. Flatten Nested List Iterator](leetcode/data-structure/dfs/341.-flatten-nested-list-iterator.md)
       * [320. Generalized Abbreviation](leetcode/data-structure/dfs/320.-generalized-abbreviation.md)
       * [417. Pacific Atlantic Water Flow](leetcode/data-structure/dfs/417.-pacific-atlantic-water-flow.md)
       * [254. Factor Combinations](leetcode/data-structure/dfs/254.-factor-combinations.md)
