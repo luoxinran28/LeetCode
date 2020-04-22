@@ -1,15 +1,14 @@
 var UnionFindSet = function (n) { 
   this.parents = [];
-  this.ranks = [];
+  this.ranks = [...Array(n)].fill(0);
   for (let i = 0; i < n; i++) { 
     this.parents[i] = i;
-    this.ranks = i;
   }
 }
 
 UnionFindSet.prototype.find = function(u) { 
   while (this.parents[u] !== u) { 
-    this.parents = this.parents[this.parents[u]]; // Compression
+    this.parents[u] = this.parents[this.parents[u]]; // Compression
     u = this.parents[u];
   }
   return u;
