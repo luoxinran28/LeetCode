@@ -194,6 +194,7 @@
       * [987. Vertical Order Traversal of a Binary Tree](leetcode/data-structure/bfs/987.-vertical-order-traversal-of-a-binary-tree.md)
       * [261. Graph Valid Tree](leetcode/data-structure/bfs/261.-graph-valid-tree.md)
     * [Union Find](leetcode/data-structure/union-find/README.md)
+      * [684. Redundant Connection](leetcode/data-structure/union-find/684.-redundant-connection.md)
       * [721. Accounts Merge](leetcode/data-structure/union-find/721.-accounts-merge.md)
       * [261. Graph Valid Tree](leetcode/data-structure/union-find/261.-graph-valid-tree.md)
       * [547. Friend Circles](leetcode/data-structure/union-find/547.-friend-circles.md)
