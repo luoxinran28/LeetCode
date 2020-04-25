@@ -20,6 +20,7 @@
     * [Topological Sort](leetcode/data-structure/topological-sort/README.md)
       * [207. Course Schedule](leetcode/data-structure/topological-sort/207.-course-schedule.md)
     * [Stack](leetcode/data-structure/stack/README.md)
+      * [224. Basic Calculator I/II/III](leetcode/data-structure/stack/224.-basic-calculator-i-ii-iii.md)
       * [735. Asteroid Collision](leetcode/data-structure/stack/735.-asteroid-collision.md)
       * [402. Remove K Digits](leetcode/data-structure/stack/402.-remove-k-digits.md)
       * [150. Evaluate Reverse Polish Notation](leetcode/data-structure/stack/150.-evaluate-reverse-polish-notation.md)
