@@ -233,6 +233,7 @@
 * [Object Oriented Design](object-oriented-design/README.md)
   * [Principles](object-oriented-design/principles.md)
 * [System Design](system-design/README.md)
+  * [362. Design Hit Counter](system-design/362.-design-hit-counter.md)
   * [381. Insert Delete GetRandom O\(1\) - Duplicates allowed](system-design/381.-insert-delete-getrandom-o-1-duplicates-allowed.md)
   * [380. Insert Delete GetRandom O\(1\)](system-design/380.-insert-delete-getrandom-o-1.md)
   * [535. Encode and Decode TinyURL](system-design/535.-encode-and-decode-tinyurl.md)
