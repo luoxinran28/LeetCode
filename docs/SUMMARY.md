@@ -4,6 +4,7 @@
 * [LeetCode](leetcode/README.md)
   * [数据结构 Data Structure](leetcode/data-structure/README.md)
     * [String](leetcode/data-structure/string/README.md)
+      * [1048. Longest String Chain](leetcode/data-structure/string/1048.-longest-string-chain.md)
       * [6. ZigZag Conversion](leetcode/data-structure/string/6.-zigzag-conversion.md)
     * [Quick Question](leetcode/data-structure/quick-question/README.md)
       * [277. Find the Celebrity](leetcode/data-structure/quick-question/277.-find-the-celebrity.md)
