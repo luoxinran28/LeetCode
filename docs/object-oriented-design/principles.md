@@ -4,13 +4,13 @@
 
 一个类应该有且只有一个改变他的理由，这个类只有一个工作。
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%284%29.png)
 
 **Open close principle 开放封闭**
 
 对象或实体应该对扩展开放，对修改封闭。
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 **Liskov substitution principle 里氏柯夫替换**
 
@@ -20,7 +20,7 @@
 
 不应该强迫一个类使用它用不上的接口，下面例子Rectangle是没法计算体积的。
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 **Dependency inversion principle**
 
@@ -30,7 +30,7 @@
 
 **5C解题法：**
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
 Clarify: 比如电梯系统，有没主客梯，客梯会不会到负层，判断超重，按钮是同时控制两种电梯吗等等问题。
 

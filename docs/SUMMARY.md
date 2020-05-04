@@ -8,6 +8,7 @@
       * [1048. Longest String Chain](leetcode/data-structure/string/1048.-longest-string-chain.md)
       * [6. ZigZag Conversion](leetcode/data-structure/string/6.-zigzag-conversion.md)
     * [Quick Question](leetcode/data-structure/quick-question/README.md)
+      * [50. Pow\(x, n\)](leetcode/data-structure/quick-question/50.-pow-x-n.md)
       * [277. Find the Celebrity](leetcode/data-structure/quick-question/277.-find-the-celebrity.md)
       * [171. Excel Sheet Column Number](leetcode/data-structure/quick-question/171.-excel-sheet-column-number.md)
       * [168. Excel Sheet Column Title](leetcode/data-structure/quick-question/168.-excel-sheet-column-title.md)
