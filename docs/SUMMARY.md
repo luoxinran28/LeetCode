@@ -146,6 +146,7 @@
       * [1086. High Five](leetcode/data-structure/heap/1086.-high-five.md)
       * [253. Meeting Rooms II](leetcode/data-structure/heap/253.-meeting-rooms-ii.md)
     * [Simulation](leetcode/data-structure/simulation/README.md)
+      * [1152. Analyze User Website Visit Pattern](leetcode/data-structure/simulation/1152.-analyze-user-website-visit-pattern.md)
       * [57. Insert Interval](leetcode/data-structure/simulation/57.-insert-interval.md)
       * [202. Happy Number](leetcode/data-structure/simulation/202.-happy-number.md)
       * [8. String to Integer \(atoi\)](leetcode/data-structure/simulation/8.-string-to-integer-atoi.md)
