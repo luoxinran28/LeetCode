@@ -41,7 +41,17 @@ I believe XXX company has a series of great products such as YYY and ZZZ to help
 3. **某一个具体的use case，你是如何解决的** 
 4. 描述**功能**，具体的**使用案例**，以及**解决方案。**不要过多**深挖算法**，**数据结构** 
 
-I was able to work a font-end project with a colleague last year. The goal was to replace the older search engine from Goolge kernel to Coveo framework on dellemc.com/search. My job was to implement the new page design in time and connect the back-end api to make sure the search result is as expected. It required a lot of communication among the PM, FA and BE developers. It was a very intensive 4 months projects because the deadline was rush and a lot of new requirement happened in the middle. The trickiest part was we have to make decision on the tools based on needs such as the vanilla JS, Vue JS, or jQuery. To make the decision, we always need to consider how much resource we have such as timeline, budget, group size, maintenance, so on and so forth. We always did some trials and fully discussed every time we made the decision. The good thing was we finished the project on time and managers were very satisfied with the page we made.
+I was able to work a font-end project with a colleague last year. The goal was to replace the older search engine kernel by using Coveo framework on dellemc.com/search. My job was to implement the new search page design on the front-end and render the corresponding result based on the request. So the work flow is similar to the typical search engine. We need to firstly index the page content to map by setting up the urls we are going to crawl. The pages are grabbed into as an instance which we call the Source. So by setting up the condition of the meta data, we will decide what information we need to show on the page as the search result and what webpages can be shown in the specific pipeline. After we get the data, we can create our search page to request the data in the search engine.
+
+We firstly need to send the Oath2 token to the secure server to get the access to our Coveo platform. Then we use the token to connect Coveo to request the result. There are two stages here, building the query and processing the query. We have set up the different events emitters based on the two stages to manipulate our result such as beforeBuildQuery, before/afterComponentsInitialization, querySuccess,  beforeProcessResults, and newQuery. 
+
+We can use the Advanced Expression with some basic regular expression to setup the data category types, timestamps and so on. And we use another Constant Expression to render the different result by default based on the sites. The search page will be configured with the analytical tool to track the usage of the page and the data will be sent to Coveo platform under specific API for the machine learning purpose.  
+
+The page has been deployed to more than 20 languages across more than 110 locales. So we did a lot compatibility work for the languages and browsers. 
+
+
+
+It required a lot of communication among the PM, FA and BE developers. It was a very intensive 4 months projects because the deadline was rush and a lot of new requirement happened in the middle. The trickiest part was we have to make decision on the tools based on needs such as the vanilla JS, Vue JS, or jQuery. To make the decision, we always need to consider how much resource we have such as timeline, budget, group size, maintenance, so on and so forth. We always did some trials and fully discussed every time we made the decision. The good thing was we finished the project on time and managers were very satisfied with the page we made.
 
 ## Why are you looking for a change?
 
