@@ -78,6 +78,7 @@
       * [79. Word Search](leetcode/data-structure/backtracking/79.-word-search.md)
       * [93. Restore IP Addresses](leetcode/data-structure/backtracking/93.-restore-ip-addresses.md)
     * [Array](leetcode/data-structure/array/README.md)
+      * [1167. Minimum Cost to Connect Sticks](leetcode/data-structure/array/1167.-minimum-cost-to-connect-sticks.md)
       * [957. Prison Cells After N Days](leetcode/data-structure/array/957.-prison-cells-after-n-days.md)
       * [304. Range Sum Query 2D - Immutable](leetcode/data-structure/array/304.-range-sum-query-2d-immutable.md)
       * [311. Sparse Matrix Multiplication](leetcode/data-structure/array/311.-sparse-matrix-multiplication.md)
