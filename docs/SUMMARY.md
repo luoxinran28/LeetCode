@@ -245,6 +245,7 @@
 * [Object Oriented Design](object-oriented-design/README.md)
   * [Principles](object-oriented-design/principles.md)
 * [System Design](system-design/README.md)
+  * [346. Moving Average from Data Stream](system-design/346.-moving-average-from-data-stream.md)
   * [706. Design HashMap](system-design/706.-design-hashmap.md)
   * [146. LRU Cache](system-design/146.-lru-cache.md)
   * [362. Design Hit Counter](system-design/362.-design-hit-counter.md)
