@@ -245,6 +245,7 @@
 * [Object Oriented Design](object-oriented-design/README.md)
   * [Principles](object-oriented-design/principles.md)
 * [System Design](system-design/README.md)
+  * [706. Design HashMap](system-design/706.-design-hashmap.md)
   * [146. LRU Cache](system-design/146.-lru-cache.md)
   * [362. Design Hit Counter](system-design/362.-design-hit-counter.md)
   * [381. Insert Delete GetRandom O\(1\) - Duplicates allowed](system-design/381.-insert-delete-getrandom-o-1-duplicates-allowed.md)
