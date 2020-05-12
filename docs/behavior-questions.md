@@ -92,3 +92,5 @@ It's great thing to see if the conflict happens because it means everybody has t
 
 As a Computer Science background, I always want to try something fancy to show my ability in the web development, even though it's not quite necessary. Sometimes I'm too focusing on the detail to improve the small part of the performance and ignored the overall big picture. Sometimes this could affect our schedule because of this. But usually after knowing more about the project in general through several conversations with the colleagues, I could change my mind of focusing on too much in detail because getting things done is more important than getting things perfectly.
 
+## Tell me something about your MBA degree?
+
