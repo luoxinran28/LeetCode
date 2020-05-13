@@ -94,3 +94,21 @@ As a Computer Science background, I always want to try something fancy to show m
 
 ## Tell me something about your MBA degree?
 
+学会基本的会计知识了解基本的记账方式，懂得看公司财报Financial Statement: A balance sheet is comprised of three items, assets, liabilities and owners equity. An income statement is comprised of a business's income and expenses over a period of time. 
+
+学习写商业计划书，包括市场需求，市场成长情况，环境变化，SWOT分析，竞争对手，细分市场，产品策略，品牌策略，定价等主要方面。
+
+学习CFO的职责，计算财报和现金流的数据，包括投资，收入，接下来几年的变化，资产贬值，净收入，风险管控等等。
+
+学习COO的职责，比如如何使用Balanced Scorecard来衡量公司运营的效率，投入人力物力时间信息等，怎样高效产出商品以及服务。
+
+学习CIO的职责，CIOs are responsible for corporate IT strategy and management. CIO helps colleagues prioritize and coordinate IT investments among business units and functions. CIOs may have a computer science or engineering background, but you hire them for their experience with project and program management, business operations and building relationships. CTO is deeply technical. It has responsibility for envisioning future technology-based business models, or head product development.  
+
+学习如何通过量化做战略决策，积极面对破坏性创新，核心竞争力（组织架构，文化，衡量企业效率），衡量产品周期，
+
+学习博弈论
+
+学习宏观和微观经济
+
+
+
