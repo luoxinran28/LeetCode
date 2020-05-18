@@ -42,3 +42,31 @@ Sharding is horizontal partitioning of data according to a shard key. This shard
 
   Master Slave replication strategy for reliability and data backups. This database concept is often asked in system design interviews with discussions on consistency and availability tradeoffs.
 
+## 设计Youtube:
+
+![](../.gitbook/assets/image%20%2814%29.png)
+
+**功能性需求：**
+
+* 能够上传视频（写）
+* 观看视频（读）
+* 点击like/dislike，评论（写）
+* 搜索视频
+* 推荐视频
+
+**非功能性需求：**
+
+* 有效性，要看的到视频
+* 可靠性，保证能观看完整视频以及评论，观看时要实时
+* 一致性，多端要能看到统一视频，但不用实时
+
+**容量：**
+
+如上图
+
+**流程：**
+
+首先前端发送请求到web服务器，web服务器通过负载均衡器找到对应的app服务器去进行相应的数据库操作，负载均衡器可以使用随机，最少使用或者哈希一致性等算法。在web服务器这里，需要最基本的读写服务，读可以从读服务器直接读取视频信息以及视频所在的文件服务器，但在读服务器之前，可以先从cache里面找是否已经有需要的信息，cache常见用类似LRU的算法。写要通过fan out将不同服务写到相应服务上面，比如视频标题或者tag信息写到搜索服务，主题等写到推荐服务，视频用户信息写到用户图服务上面，然后将视频信息放到视频对象数据库中。
+
+视频作为文件和图片一样，不应该直接放到数据库中，而是要放到文件仓库里，因为读比写多很多，大部分用户都是看视频，所以需要经典master-slave的服务器架构，写在master上面，slave拷贝一个读服务器用于读，master和slave经常要互换，但如果写入数据量很大，特别是视频服务的话，一个写进程可能占用很久，容易造成阻塞，所以我们需要另外开辟一个异步的写服务，在写到文件服务器以前加一个消息队列，用来排队写服务。这样因为读写分离可能会造成一点时效性的确实，并不能马上看到上传的视频，但是保证了可靠性和一致性。
+
