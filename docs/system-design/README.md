@@ -44,7 +44,7 @@ Sharding is horizontal partitioning of data according to a shard key. This shard
 
 ## 设计Youtube:
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2818%29.png)
 
 **功能性需求：**
 

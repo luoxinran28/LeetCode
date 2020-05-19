@@ -236,7 +236,7 @@ CORS can be used as a modern alternative to the [JSONP](https://en.wikipedia.org
 
 The CORS standard works by adding new HTTP headers which allow servers to serve resources to permitted origin domains. Browsers support these headers and respect the restrictions they establish.
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 
 

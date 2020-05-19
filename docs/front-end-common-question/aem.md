@@ -4,5 +4,5 @@ AEM is a cloud based client-server system for building enterprise grade websites
 
 To enable websites to perform faster, AEM allows as to have what we call a **dispatcher**. It handles caching of web pages and load balancing. Having web pages cached means that we can get them quicker \(they are static so can be served quicker\). This speeds up performance on our site. Having a dispatcher means when end users come to your site, they first hit the dispatcher first, which serves them cached content. 
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 
