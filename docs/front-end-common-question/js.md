@@ -411,3 +411,54 @@ ES2015 defines a module syntax which aims to replace both AMD and CommonJS.
 
 Static properties are typically configuration variables and static methods are usually pure utility functions which do not depend on the state of the instance.
 
+**Run obj.getA\(\).getB\(\) to print 2 console.log:**
+
+```javascript
+const obj = {
+    getA() {
+        console.log();
+        return this;
+    },
+    getB() {
+        console.log();
+    }
+};
+```
+
+Run \[1, 2\].print\(\);
+
+```javascript
+Array.prototype.print = () => {
+    let res = [];
+    this.forEach(ele => res.push(ele));
+    console.log(res.join(" "));
+}
+```
+
+Polymorphism:
+
+```javascript
+const a = function (x) {
+    this.x = x;
+}
+
+a.prototype = { // 要传给b，所以用prototype
+    getX() {
+        return this.x;
+    }
+}
+
+const b = function (b) {
+    this.y = y;
+    a.call(this, x); // 调用a函数
+    getY() {
+        return this.y;
+    }
+}
+
+const newB = new b('x', 'y');
+
+newB.getX();
+newB.getY();
+```
+
