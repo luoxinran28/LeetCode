@@ -34,11 +34,12 @@ class Counter extends Component {
   // 2. function();
   handleIncrement() { 
     console.log("click");
-    this.state.count++; // 注意这里的this是被调用的
+    // this.state.count++; // 注意这里的this是被调用的，但是this.state不能被访问
+    this.setState({ count: this.state.count + 1 }); // this.setState 继承于 Component
   }
 
 
-  render() { 
+  render() { // 每隔一段时间render都会被异步调用，react会比较旧的virtual dom 和新的 virtual dom然后更新被更改的地方
     return <React.Fragment>
       <h1>Hello Word</h1><p>Discription</p>
       <button onClick={this.handleIncrement}>Increase</button>
