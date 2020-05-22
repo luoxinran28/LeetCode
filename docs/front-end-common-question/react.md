@@ -56,3 +56,38 @@ class Counter extends Component {
 export default Counter;
 ```
 
+如果需要向listener传参数，onClick只接受一个函数的引用而不能接受参数，可以多调用一层函数来处理：
+
+```jsx
+import React, { Component } from 'react';
+
+class Counter extends Component {
+
+  ......
+
+  handleIncrement = (product) => { 
+    console.log("click: ", product.id);
+    this.setState({ count: this.state.count + 1 }); // this.setState 继承于 Component
+  }
+
+  doHandleIncrement = () => { 
+    this.handleIncrement({id: 1});
+  }
+
+  render() { // 每隔一段时间render都会被异步调用，react会比较旧的virtual dom 和新的 virtual dom然后更新被更改的地方
+    return <React.Fragment>
+      <h1>Hello Word</h1><p>Discription</p>
+      <button onClick={this.doHandleIncrement}>Increase</button>
+      <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+      <ul>
+        {this.state.tags.map(tag => <li key={tag}>{tag}</li>)}
+      </ul>
+    </React.Fragment>;
+  }
+
+
+}
+ 
+export default Counter;
+```
+
