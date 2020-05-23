@@ -91,3 +91,7 @@ class Counter extends Component {
 export default Counter;
 ```
 
+**组件间数据传输this.state v.s. this.props:**
+
+this.state是在component里面的，数据是private的，其他组件无法获取。this.props可以从上一层的component里面获取传下来的数据。如果下一层组件需要操作上一层组件的函数，比如handleDelete\(\)，可以把这个函数的引用通过onDelete传入到下一层组件，下一层组件中的button来调取this.props.onDelete来触发这个函数。
+
