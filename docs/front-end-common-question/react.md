@@ -95,3 +95,14 @@ export default Counter;
 
 this.state是在component里面的，数据是private的，其他组件无法获取。this.props可以从上一层的component里面获取传下来的数据。如果下一层组件需要操作上一层组件的函数，比如handleDelete\(\)，可以把这个函数的引用通过onDelete传入到下一层组件，下一层组件中的button来调取this.props.onDelete来触发这个函数。
 
+
+
+Design Patterns:
+
+* Container / View Patterns: 一个view component只负责view的作用，另一个component负责controller的作用，比如在componentDidMount里面发送fetch请求，在这个component里面render需要渲染的view component
+* Render Props: A component that takes as a prop a function that returns a Component, and calls it with the intended parameters。将子孙的component都看做是functions
+* Context Api Pattern: 当我们要穿props给子类的时候，可能要传得非常深，毕竟很多子孙并不会用到所需要的props，这时候可以使用Provider和Consumer的模式来解决 ，将results放到Context里面，使用Higher Order Components或者Render Props
+* Css-in-js Pattern: inline css within the component won't pollute other components.
+
+
+
