@@ -120,5 +120,17 @@ Lazy-loading \(Dynamic Importing\) the component into the multiple bundles。
 
 To update dom, we should update it faster and as less as possible because it's too expensive. React has its own dom tree which creates, it updates the states and props, and compare and change the modified dom only.
 
-Life cycle of React rendering
+Life cycle of React rendering:
+
+参考：[https://www.w3schools.com/react/react\_lifecycle.asp](https://www.w3schools.com/react/react_lifecycle.asp)
+
+* Mount: putting elements into the virtual DOM
+  * constructor: we can setup the initial state here.
+  * render: the children will be rendered recursively.
+  * componentDidMount: called after dom is rendered.
+* Update: compare and update the modified dom
+  * render: re-render the HTML to the DOM, with the new changes.
+  * componentDidUpdate: called after the component is updated in the DOM. It accepts prevProps and prevState parameters.
+* Unmount: when a component is removed from the DOM
+  * componentWillUnmount: called before the remove.
 
