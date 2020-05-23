@@ -104,5 +104,21 @@ Design Patterns:
 * Context Api Pattern: 当我们要穿props给子类的时候，可能要传得非常深，毕竟很多子孙并不会用到所需要的props，这时候可以使用Provider和Consumer的模式来解决 ，将results放到Context里面，使用Higher Order Components或者Render Props
 * Css-in-js Pattern: inline css within the component won't pollute other components.
 
+**Why can't you update state directly without setState\(\)?**
 
+setState每次在re-render组件的时候都会被调用，首先会copy一个state，然后更改，然后再覆盖原来的state，直接更改state不能做到在重新渲染的时候更改state。
+
+**What is Fragments and why do we use it?**
+
+每次调用render函数的时候，我们只能return一个child，如果用一个&lt;div&gt;来wrap所有的child，component多了之后会有很多的div生成影响性能
+
+**How to do code-splitting in react?**
+
+Lazy-loading \(Dynamic Importing\) the component into the multiple bundles。
+
+**Explain Virtual Dom?**
+
+To update dom, we should update it faster and as less as possible because it's too expensive. React has its own dom tree which creates, it updates the states and props, and compare and change the modified dom only.
+
+Life cycle of React rendering
 
