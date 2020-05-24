@@ -134,3 +134,13 @@ Life cycle of React rendering:
 * Unmount: when a component is removed from the DOM
   * componentWillUnmount: called before the remove.
 
+**{} v.s. {{}}**
+
+React doesn't use template html, it's just JS. So unlike Angular or Vue, it use {}.
+
+**Functional \(stateless\) v.s. class-based \(stateful\) Components**
+
+![](../.gitbook/assets/image%20%2819%29.png)
+
+\*\*\*\*
+
