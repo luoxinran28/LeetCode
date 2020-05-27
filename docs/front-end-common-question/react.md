@@ -163,7 +163,7 @@ const result = wrap("div")(toLowerCase(trim("js learning")));
 * No global state \(DOM, files, db, etc\)
 * No mutation of parameter
 
-It's self-documented, easy to test, concurrent, and cacheable
+It's self-documented, easy to test, concurrent, and cacheable. 给同样参数去不断调用，一直返回同样的结果。
 
 Immutability:
 
