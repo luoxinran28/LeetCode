@@ -259,7 +259,7 @@
   * [Design Netflix](system-design/design-netflix.md)
 * [Behavior Questions](behavior-questions.md)
 * [Front-end Common Question Notes](front-end-common-question/README.md)
-  * [React](front-end-common-question/react.md)
+  * [React/Redux](front-end-common-question/react.md)
   * [AEM](front-end-common-question/aem.md)
   * [HTML](front-end-common-question/html.md)
   * [CSS](front-end-common-question/css.md)

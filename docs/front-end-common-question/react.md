@@ -1,4 +1,4 @@
-# React
+# React/Redux
 
 使用npx create-react-app创建一个基本的react程序。
 
@@ -142,5 +142,54 @@ React doesn't use template html, it's just JS. So unlike Angular or Vue, it use 
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
-\*\*\*\*
+**What is Redux?**
+
+1. Centralize the components state in an application. 2. Makes the data flow transparent and predictable. 3. Preserve the state
+
+**Functional Programming example:**
+
+```jsx
+const trim = str => str.trim();
+const toLowerCase = str => str.toLowerCase();
+const wrap = type => str => `<${type}>${str}</${type}>`; // Curry style
+
+const result = wrap("div")(toLowerCase(trim("js learning")));
+```
+
+**What's pure functions?**
+
+* No random values
+* No current date/time
+* No global state \(DOM, files, db, etc\)
+* No mutation of parameter
+
+It's self-documented, easy to test, concurrent, and cacheable
+
+Immutability:
+
+JS 因为是pass-by-reference，所以很难做到Immutability，但可以通过deep copy object来做到不变性，但会损耗内存。
+
+```jsx
+const person = {
+    name: "Joe",
+    address: {
+        country: "USA",
+        city: "Salt Lake City"
+    }
+}
+
+// const updated = Object.assign({}, person, {name: "Doe"});
+const updated = {...person, name: "Doe"};
+updated.address.city = "New York";
+console.log(person); // Here the address is changed because the copy 
+// only takes the first level. For deep copy:
+const updated = {
+    ...person,
+    address: {
+        ...person.address, // Deep copy here
+        city: "New York"
+    },
+    name: "Doe"
+};
+```
 
