@@ -339,7 +339,7 @@ store.dispatch(actionCreators.bugAdded("Bug 1"));
 
 ```jsx
 /* File: bugs.js */
-import { createAction } from "@reduxjs/toolkit";
+import { createAction, createReducer } from "@reduxjs/toolkit";
 
 
 export const bugAdded = createAction("bugAdded");
@@ -356,7 +356,7 @@ export default createReducer([], {
             resolved: false
         });
     },
-    [bugUpdated.type]: (bugs, action) => state.filter(bug => bug.id !== action.payload.id),
+    [bugRemoved.type]: (bugs, action) => state.filter(bug => bug.id !== action.payload.id),
     [bugResolved.type]: (bugs, action) => {
         const index = bugs.findIndex(bug => bug.id === action.payload.id);
         state[index].resolved = true;
@@ -381,5 +381,51 @@ import * as actions from "./actions";
 store.dispatch(actionCreators.bugAdded("Bug 1"));
 ```
 
+使用createSlice进一步简化：
 
+```jsx
+/* File: bugs.js */
+import { createSlice } from "@reduxjs/toolkit";
+
+let lastId = 0;
+
+const slice = createSlice({
+    name: 'bugs',
+    initialState: [],
+    reducers: {
+        bugAdded: (bugs, action) => {
+            bugs.push({
+                id: ++lastId,
+                description: action.payload.description,
+                resolved: false
+            });
+        },
+        bugRemoved: (bugs, action) => state.filter(bug => bug.id !== action.payload.id),
+        bugResolved: (bugs, action) => {
+            const index = bugs.findIndex(bug => bug.id === action.payload.id);
+            state[index].resolved = true;
+        }
+    }
+});
+
+export const { bugAdded, bugRemoved, bugResolved } = slice.action;
+export default slice.reducer;
+
+
+/* File: configureStore.js */
+import { configureStore } from "@reduxjs/toolkit"; 
+import { reducer } from "./bugs.js";
+
+export default function createStore(reducer) {
+    return configureStore({ reducer });
+}
+
+
+
+/* File: index.js */
+import store from "./configureStore";
+import * as actions from "./actions";
+
+store.dispatch(actionCreators.bugAdded("Bug 1"));
+```
 
