@@ -290,7 +290,7 @@ export default reducer = (state = [], action) => {
                 }
             ];
         case "bugRemoved":
-            return state.filter(but => bug.id !== action.payload.id);
+            return state.filter(bug => bug.id !== action.payload.id);
         default:
             return state;
     }
@@ -332,11 +332,54 @@ import store from "./customStore";
 console.log(store); // 这里指挥显示getState的引用
 import * as actions from "./actions";
 
+store.dispatch(actionCreators.bugAdded("Bug 1"));
+```
 
-const unsubscribe = store.subscribe(() => {
+使用Ducks Pattern设计模式将上面代码合并到一个文件./bugs.js里，使用redux/toolkit简化代码：
 
+```jsx
+/* File: bugs.js */
+import { createAction } from "@reduxjs/toolkit";
+
+
+export const bugAdded = createAction("bugAdded");
+export const bugResolved = createAction("bugResolved");
+export const bugRemoved = createAction("bugRemoved");
+
+let lastId = 0;
+
+export default createReducer([], {
+    [bugAdded.type]: (bugs, action) => {
+        bugs.push({
+            id: ++lastId,
+            description: action.payload.description,
+            resolved: false
+        });
+    },
+    [bugUpdated.type]: (bugs, action) => state.filter(bug => bug.id !== action.payload.id),
+    [bugResolved.type]: (bugs, action) => {
+        const index = bugs.findIndex(bug => bug.id === action.payload.id);
+        state[index].resolved = true;
+    }
 });
+
+
+/* File: configureStore.js */
+import { configureStore } from "@reduxjs/toolkit"; 
+import { reducer } from "./bugs.js";
+
+export default function createStore(reducer) {
+    return configureStore({ reducer });
+}
+
+
+
+/* File: index.js */
+import store from "./configureStore";
+import * as actions from "./actions";
 
 store.dispatch(actionCreators.bugAdded("Bug 1"));
 ```
+
+
 
