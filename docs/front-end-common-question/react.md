@@ -120,7 +120,7 @@ Lazy-loading \(Dynamic Importing\) the component into the multiple bundles。
 
 To update dom, we should update it faster and as less as possible because it's too expensive. React has its own dom tree which creates, it updates the states and props, and compare and change the modified dom only.
 
-Life cycle of React rendering:
+**Life cycle of React rendering:**
 
 参考：[https://www.w3schools.com/react/react\_lifecycle.asp](https://www.w3schools.com/react/react_lifecycle.asp)
 
