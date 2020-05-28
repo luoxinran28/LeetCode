@@ -13,8 +13,8 @@ class Counter extends Component {
     tags: ['1', '2','3']
   }
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.handleIncrement = this.handleIncrement.bind(this);
   }
 
