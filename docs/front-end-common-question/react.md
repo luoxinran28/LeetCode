@@ -142,12 +142,53 @@ React doesn't use template html, it's just JS. So unlike Angular or Vue, it use 
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
+**What's Higher Order Component?**
+
+用于重用相同的代码逻辑于不同的component之间，比如有个Tooltip可以放在不同的component，可以把Tooltip打包到一个function里面给其他component用，这样如果需要修改Tooltip，就不用到其他的component去一个个修改了。
+
+**What's Hooks?**
+
+可以让Stateless的function使用class里面才有的state以及life cycle里的函数，比如componentDidMount和componentWillUnmount。
+
+setEffect\(\)合并了componentDidMount\(\), componentDidUpdate\(\), componentWillUnmount\(\)
+
+```jsx
+import React, { useState, useEffect, Fragment } from 'react'; // Hooks func starts with 'use'
+
+function Counter() {
+    const array = useState(0);
+    const count = array[0]; // this.state.count
+    const setState = array[1]; // this.setState()
+    
+    useEffect(() => { // componentDidMount and componentDidUpdate
+        document.title = `Clicked ${count} times.`;
+        return () => { // componentWillUnmount
+        
+        }
+    });
+    
+    return (
+        <Fragment>
+            <div>
+                Counter: { count }
+            </div>
+            <button onClick = {() => setState(count + 1)}></button>
+        </Fragment>
+    );
+}
+```
+
+What's Context?
+
+用来解决props drilling的问题，就是一个props可以传到很深的component里面。
+
 ## **What is Redux?**
 
-1. 概念：Centralize the components state in an application. 2. Makes the data flow transparent and predictable. 3. Preserve the state
-2. Reducer: 在函数式变成里面，我们不应该去mutate改变状态state，所以我们用一个reducer函数来改变store，它接收一个现在的store，返回一个更新后的store。为了知道要更新store里面的什么状态，我们有了一个action来判断更改什么。相当于Event Handler。
-3. Store：一个JS的Object用来包含现有的状态state。
-4. Action：一个JS的Object来表示刚才发生了什么事，通过dispatch给store，store又转手传给reducer，然后在store里面调用reducer去执行。相当于Event
+1. 解决了Props Drilling的问题。
+2. 概念：Centralize the components state in an application. 2. Makes the data flow transparent and predictable. 3. Preserve the state
+3. Reducer: 在函数式变成里面，我们不应该去mutate改变状态state，所以我们用一个reducer函数来改变store，它接收一个现在的store，返回一个更新后的store。为了知道要更新store里面的什么状态，我们有了一个action来判断更改什么。相当于Event Handler。
+4. Store：一个JS的Object用来包含现有的状态state。
+5. Action：一个JS的Object来表示刚才发生了什么事，通过dispatch给store，store又转手传给reducer，然后在store里面调用reducer去执行。相当于Event
 
 Action -&gt; Store -&gt; Reducer这样的架构能够更好让人去追踪记录会有什么样的action将要去改变state，甚至可以更好的做undo和redo了。
 
