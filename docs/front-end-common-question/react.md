@@ -95,9 +95,7 @@ export default Counter;
 
 this.state是在component里面的，数据是private的，其他组件无法获取。this.props可以从上一层的component里面获取传下来的数据。如果下一层组件需要操作上一层组件的函数，比如handleDelete\(\)，可以把这个函数的引用通过onDelete传入到下一层组件，下一层组件中的button来调取this.props.onDelete来触发这个函数。
 
-
-
-Design Patterns:
+**Design Patterns:**
 
 * Container / View Patterns: 一个view component只负责view的作用，另一个component负责controller的作用，比如在componentDidMount里面发送fetch请求，在这个component里面render需要渲染的view component
 * Render Props: A component that takes as a prop a function that returns a Component, and calls it with the intended parameters。将子孙的component都看做是functions
@@ -114,7 +112,11 @@ setState每次在re-render组件的时候都会被调用，首先会copy一个st
 
 **How to do code-splitting in react?**
 
-Lazy-loading \(Dynamic Importing\) the component into the multiple bundles。
+Lazy-loading \(Dynamic Importing\) the component into the multiple bundles. 
+
+Quote: "Code-Splitting is a feature supported by bundlers like [Webpack](https://webpack.js.org/guides/code-splitting/), [Rollup](https://rollupjs.org/guide/en/#code-splitting) and Browserify \(via [factor-bundle](https://github.com/browserify/factor-bundle)\) which can create multiple bundles that can be dynamically loaded at runtime.
+
+Code-splitting your app can help you “lazy-load” just the things that are currently needed by the user, which can dramatically improve the performance of your app."
 
 **Explain Virtual Dom?**
 
