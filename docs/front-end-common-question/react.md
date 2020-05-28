@@ -180,7 +180,7 @@ function Counter() {
 }
 ```
 
-What's Context?
+**What's Context?**
 
 用来解决props drilling的问题，就是一个props可以传到很深的component里面。
 
@@ -188,9 +188,9 @@ What's Context?
 
 1. 解决了Props Drilling的问题。
 2. 概念：Centralize the components state in an application. 2. Makes the data flow transparent and predictable. 3. Preserve the state
-3. Reducer: 在函数式变成里面，我们不应该去mutate改变状态state，所以我们用一个reducer函数来改变store，它接收一个现在的store，返回一个更新后的store。为了知道要更新store里面的什么状态，我们有了一个action来判断更改什么。相当于Event Handler。
+3. Action：一个JS的Object来表示刚才发生了什么事，store通过dispatch来调用reducer执行刚才的action。相当于Event
 4. Store：一个JS的Object用来包含现有的状态state。
-5. Action：一个JS的Object来表示刚才发生了什么事，通过dispatch给store，store又转手传给reducer，然后在store里面调用reducer去执行。相当于Event
+5. Reducer: 在函数式变成里面，我们不应该去mutate改变状态state，所以我们用一个reducer函数来改变store，它接收一个现在的store，返回一个更新后的store。为了知道要更新store里面的什么状态，我们有了一个action来判断更改什么。相当于Event Handler。
 
 Action -&gt; Store -&gt; Reducer这样的架构能够更好让人去追踪记录会有什么样的action将要去改变state，甚至可以更好的做undo和redo了。
 
@@ -281,7 +281,7 @@ Create Store:
 import { createStore } from 'redux';
 import reducer from './reducer';
 
-const store createStore(reducer); // High order function: take fn as arguments
+const store = createStore(reducer); // High order function: take fn as arguments
 
 export default store;
 ```
@@ -320,6 +320,16 @@ console.log(store.getState());
 首先学习怎么让function变成私有private的，就是用get函数将内部成员数值返回，然后返回需要public的函数引用。
 
 ```jsx
+/* File: actions.js */
+const export function bugAdded(description) {
+    return {
+        type: "bugAdded",
+        payload: {
+            description: description;
+        }
+    };
+}
+
 /* File: reducer.js */
 export default reducer = (state = [], action) => {
     switch(action.type) {
@@ -375,7 +385,7 @@ import store from "./customStore";
 console.log(store); // 这里指挥显示getState的引用
 import * as actions from "./actions";
 
-store.dispatch(actionCreators.bugAdded("Bug 1"));
+store.dispatch(actions.bugAdded("Bug 1"));
 ```
 
 使用Ducks Pattern设计模式将上面代码合并到一个文件./bugs.js里，使用redux/toolkit简化代码：
