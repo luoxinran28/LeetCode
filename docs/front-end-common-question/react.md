@@ -142,9 +142,14 @@ React doesn't use template html, it's just JS. So unlike Angular or Vue, it use 
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
-**What is Redux?**
+## **What is Redux?**
 
-1. Centralize the components state in an application. 2. Makes the data flow transparent and predictable. 3. Preserve the state
+1. 概念：Centralize the components state in an application. 2. Makes the data flow transparent and predictable. 3. Preserve the state
+2. Reducer: 在函数式变成里面，我们不应该去mutate改变状态state，所以我们用一个reducer函数来改变store，它接收一个现在的store，返回一个更新后的store。为了知道要更新store里面的什么状态，我们有了一个action来判断更改什么。相当于Event Handler。
+3. Store：一个JS的Object用来包含现有的状态state。
+4. Action：一个JS的Object来表示刚才发生了什么事，通过dispatch给store，store又转手传给reducer，然后在store里面调用reducer去执行。相当于Event
+
+Action -&gt; Store -&gt; Reducer这样的架构能够更好让人去追踪记录会有什么样的action将要去改变state，甚至可以更好的做undo和redo了。
 
 **Functional Programming example:**
 
@@ -165,7 +170,7 @@ const result = wrap("div")(toLowerCase(trim("js learning")));
 
 It's self-documented, easy to test, concurrent, and cacheable. 给同样参数去不断调用，一直返回同样的结果。
 
-Immutability:
+**Immutability:**
 
 JS 因为是pass-by-reference，所以很难做到Immutability，但可以通过deep copy object来做到不变性，但会损耗内存。
 
@@ -191,5 +196,147 @@ const updated = {
     },
     name: "Doe"
 };
+```
+
+React Actions:
+
+```jsx
+{
+    type: "bugAdded",
+    payload: {
+        id: 1,
+        description: ""
+    }
+}
+```
+
+Reducer:
+
+```jsx
+export default function reducer(state = [], action) {
+    switch(action.type) {
+        case "bugAdded": 
+            return [
+                ...state,
+                { // 只需要包含最少的信息
+                    id: ++lastId,
+                    desction: action.payload.description,
+                    resolved: false
+                }
+            ];
+        case "bugRemoved":
+            return state.filter(but => bug.id !== action.payload.id);
+        default:
+            return state;
+    }
+}
+```
+
+Create Store:
+
+```jsx
+import { createStore } from 'redux';
+import reducer from './reducer';
+
+const store createStore(reducer); // High order function: take fn as arguments
+
+export default store;
+```
+
+The use of store:
+
+```jsx
+import store from "./store";
+
+const unsubscribe = store.subscribe(() => {
+    
+}); // Will be called once the state is changed
+
+store.dispatch({
+    type: "bugAdded",
+    payload: {
+        description: "Bug1"
+    }
+});
+
+unsubscribe();
+
+store.dispatch({
+    type: "bugRemoved",
+    payload: {
+        id: "1",
+        description: "Bug1"
+    }
+});
+
+console.log(store.getState());
+```
+
+**Build Redux from Scratch:**
+
+首先学习怎么让function变成私有private的，就是用get函数将内部成员数值返回，然后返回需要public的函数引用。
+
+```jsx
+/* File: reducer.js */
+export default reducer = (state = [], action) => {
+    switch(action.type) {
+        case "bugAdded": 
+            return [
+                ...state,
+                { // 只需要包含最少的信息
+                    id: ++lastId,
+                    desction: action.payload.description,
+                    resolved: false
+                }
+            ];
+        case "bugRemoved":
+            return state.filter(but => bug.id !== action.payload.id);
+        default:
+            return state;
+    }
+}
+
+/* File: customStore.js */
+import { reducer } from "./reducer";
+
+export default function createStore(reducer) {
+    let state;
+    let listeners = []; // 需要监听当state改变了之后，我们再调用subscribe()
+    
+    function getState() {
+        return state;
+    }
+    
+    function dispatch(action) {
+        state = reducer(state, action);
+        for(let i = 0; i < listeners.lenght; i++) {
+            listeners[i](); // dispath之后再执行subscribe了的函数
+        }
+    }
+    
+    function subscribe(listener) {
+        listeners.push(listener);
+    }
+    
+    return {
+        subscribe,
+        dispatch,
+        getState
+    };
+}
+
+
+
+/* File: index.js */
+import store from "./customStore";
+console.log(store); // 这里指挥显示getState的引用
+import * as actions from "./actions";
+
+
+const unsubscribe = store.subscribe(() => {
+
+});
+
+store.dispatch(actionCreators.bugAdded("Bug 1"));
 ```
 
