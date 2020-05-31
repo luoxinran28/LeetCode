@@ -475,6 +475,16 @@ function add(num1, num2) {
 }
 ```
 
+**Throttling and Debouncing:**
+
+Throttling 就是点击一个地方立即执行event，并且相隔一段时间才能继续点击下一个event。
+
+Debouncing是点击一个地方隔一段时间才执行event。
+
+```javascript
+
+```
+
 **常见JS前端安全问题：**
 
 **Cross Site Scripting\(XSS\):** 在&lt;textarea&gt;等输入field里面加入&lt;script&gt;用来做跳转页面、获取个人信息、登录银行账号的非法操作。如果可以，要验证用户输入的信息给用户看，比如预览提交的表单等，其次就是要对输入信息进行过滤，排除script等，输入信息要是需要的format
