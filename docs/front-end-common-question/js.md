@@ -475,3 +475,11 @@ function add(num1, num2) {
 }
 ```
 
+**常见JS前端安全问题：**
+
+**Cross Site Scripting\(XSS\):** 在&lt;textarea&gt;等输入field里面加入&lt;script&gt;用来做跳转页面、获取个人信息、登录银行账号的非法操作。如果可以，要验证用户输入的信息给用户看，比如预览提交的表单等，其次就是要对输入信息进行过滤，排除script等，输入信息要是需要的format
+
+**SQL Injection:** 直接发送的文字里面可能包含SQL语句，如果我在input里面加一个"符号紧接着类似drop all tables的sql语句，可能会被执行到DB里面。解决方法是把input里面的字符都要加上\来表示是普通字符。
+
+**Cross Site Request Forgery\(CSRF\):** 有一个虚假网站让填写一些个人信息，这个页面里面有个隐藏的填好的form，里面是转账信息，如果有人登陆这个网站提交了这些个人信息，这个隐藏的填好的form就会发送到指定的地方比如说银行，如果这时候恰好另一个tab已经登陆了银行页面，可能这个转账就发送出去给其他人了。解决方法是，服务器应该给正常提交form的页面一个token，提交表单后，这个表单应该带着这个token一起提交，服务器要验证这个token是否match。
+
