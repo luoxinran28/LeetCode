@@ -338,7 +338,7 @@ export default reducer = (state = [], action) => {
                 ...state,
                 { // 只需要包含最少的信息
                     id: ++lastId,
-                    desction: action.payload.description,
+                    description: action.payload.description,
                     resolved: false
                 }
             ];
@@ -385,7 +385,11 @@ import store from "./customStore";
 console.log(store); // 这里指挥显示getState的引用
 import * as actions from "./actions";
 
+const unsubscribe = store.subscribe( () => {
+    // Will be called once the state is changed
+});
 store.dispatch(actions.bugAdded("Bug 1"));
+unsubscribe(); // Release the memory
 ```
 
 使用Ducks Pattern设计模式将上面代码合并到一个文件./bugs.js里，使用redux/toolkit简化代码：
@@ -469,7 +473,7 @@ export default slice.reducer;
 import { configureStore } from "@reduxjs/toolkit"; 
 import { reducer } from "./bugs.js";
 
-export default function createStore(reducer) {
+export default function {
     return configureStore({ reducer });
 }
 
@@ -477,8 +481,8 @@ export default function createStore(reducer) {
 
 /* File: index.js */
 import store from "./configureStore";
-import * as actions from "./actions";
+import { bugAdded } from "./bugs.js";
 
-store.dispatch(actionCreators.bugAdded("Bug 1"));
+store().dispatch(actionCreators.bugAdded("Bug 1"));
 ```
 
