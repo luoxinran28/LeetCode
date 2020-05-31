@@ -482,7 +482,37 @@ Throttling 就是点击一个地方立即执行event，并且相隔一段时间�
 Debouncing是点击一个地方隔一段时间才执行event。
 
 ```javascript
+// Throttling
+document.getElementById('myId').addEventListener('click', throttle((e) => {
+    console.log("You clicked.");
+}, 5000));
 
+function throttle(fn, delay) {
+    let last = 0;
+    return (...args) => {
+        if(now - last < delay) return;
+        last = now;
+        return fn(...args);
+    }
+}
+
+// Debouncing
+document.getElementById('myId').addEventListener('click', debounce((e) => {
+    console.log("You clicked.");
+}, 5000));
+
+function debounce(fn, delay) {
+    let timoutId === null;
+    return (...args) => {
+        if(timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        timeoutId = setTimeout(() => {
+            fn(...args);
+        }, delay);
+    }
+
+}
 ```
 
 **常见JS前端安全问题：**
