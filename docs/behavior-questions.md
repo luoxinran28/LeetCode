@@ -53,6 +53,12 @@ The page has been deployed to more than 20 languages across more than 110 locale
 
 It required a lot of communication among the PM, FA and BE developers. It was a very intensive 4 months projects because the deadline was rush and a lot of new requirement happened in the middle. The trickiest part was we have to make decision on the tools based on needs such as the vanilla JS, Vue JS, or jQuery. To make the decision, we always need to consider how much resource we have such as timeline, budget, group size, maintenance, so on and so forth. We always did some trials and fully discussed every time we made the decision. The good thing was we finished the project on time and managers were very satisfied with the page we made.
 
+
+
+1. Launch new pages. 14% traffic. 12s -&gt; 4s
+2. BE/FE Unit tests
+3. KT to new colleagues
+
 ## Why are you looking for a change?
 
 * Why did you leave your previous company/position?
