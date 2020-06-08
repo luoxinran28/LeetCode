@@ -18,7 +18,7 @@ In the back end, the HTML markup will contain `i18n` placeholders and content fo
 * Character counts come into play with things like headlines, labels, and buttons, because sentences could be in different lengths
 * Colors are perceived differently across languages and cultures
 * Formatting dates and currencies - Calendar dates are sometimes presented in different ways. Eg. "May 31, 2012" in the U.S. vs. "31 May 2012" in parts of Europe.
-* Do not concatenate translated strings like `"The date today is " + date.`. Use a template string with parameters substitution for each language instead. For example, look at the following two sentences in English and Chinese respectively: `will travel on {% date %}` and `{% date %} 我会出发`
+* Do not concatenate translated strings like `"The date today is " + {$date}.`. Use a template string with parameters substitution for each language instead. For example, look at the following two sentences in English and Chinese respectively:  `will travel on {$date}` and `{$date} 我会出发`
 * Language reading direction
 
 #### What are `data-` attributes good for?
