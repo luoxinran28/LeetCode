@@ -134,3 +134,11 @@ const styles = StyleSheet.create({
 
 这里alignItems一旦被一个block封装起来，就会被reset，所以定义两次。
 
+touchable的区别：
+
+* TouchableWithoutFeedback
+* TouchableOpacity
+* TouchableHighlight
+
+What's Modal?
+
