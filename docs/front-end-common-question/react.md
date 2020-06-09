@@ -150,6 +150,12 @@ React doesn't use template html, it's just JS. So unlike Angular or Vue, it use 
 
 **What's Hooks?**
 
+Hooks are functions to hook into React state and lifecycle features from function components.
+
+* It's different way to do same thing with classes.
+* Simpler code. No more lifecycle methods.
+* Very useful in React Native.
+
 可以让Stateless的function使用class里面才有的state以及life cycle里的函数，比如componentDidMount和componentWillUnmount。
 
 setEffect\(\)合并了componentDidMount\(\), componentDidUpdate\(\), componentWillUnmount\(\)
