@@ -136,9 +136,53 @@ const styles = StyleSheet.create({
 
 touchable的区别：
 
-* TouchableWithoutFeedback
-* TouchableOpacity
-* TouchableHighlight
+* TouchableWithoutFeedback：一般不用，按下没任何反应。
+* TouchableOpacity：按下之后变半透明
+* TouchableHighlight：只能有一个子comp，按下整体变色
 
 What's Modal?
+
+用来显示一个封装好的弹出视图。例子：
+
+```javascript
+const App = () => {
+  const [modalVisible, setModalVisible] = useState(false);
+  return (
+    <View style={styles.centeredView}>
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => {
+          Alert.alert("Modal has been closed.");
+        }}
+      >
+        <View style={styles.centeredView}>
+          <View style={styles.modalView}>
+            <Text style={styles.modalText}>Hello World!</Text>
+
+            <TouchableHighlight
+              style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
+              onPress={() => {
+                setModalVisible(!modalVisible);
+              }}
+            >
+              <Text style={styles.textStyle}>Hide Modal</Text>
+            </TouchableHighlight>
+          </View>
+        </View>
+      </Modal>
+
+      <TouchableHighlight
+        style={styles.openButton}
+        onPress={() => {
+          setModalVisible(true);
+        }}
+      >
+        <Text style={styles.textStyle}>Show Modal</Text>
+      </TouchableHighlight>
+    </View>
+  );
+};
+```
 
