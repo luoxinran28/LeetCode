@@ -26,10 +26,10 @@ console.log("Listening on port 3000...");
 
 **NPM:**
 
-version: ^4.13.6(major.minor.patch), the minor version change doesn't break the existing API.
+version: ^4.13.6\(major.minor.patch\), the minor version change doesn't break the existing API.
 
-- ^4.13.6 = 4.x
-- ~4.13.6 = 4.13.x
+* ^4.13.6 = 4.x
+* ~4.13.6 = 4.13.x
 
 ## Express
 
@@ -42,27 +42,114 @@ app.use('/api/admin', (res, req, next) => {
 }); // middleware
 ```
 
-- A middleware function is a function that takes a request object and either
+* A middleware function is a function that takes a request object and either
+
   terminates the request/response cycle
+
   or passes control to another middleware
+
   function.
 
 ### Common plugin in Express
 
 Express has a few built-in middleware functions:
 
-- json(): to parse the body of requests with a JSON payload
-- urlencoded(): to parse the body of requests with URL-encoded payload
-- static(): to serve static files
+* json\(\): to parse the body of requests with a JSON payload
+* urlencoded\(\): to parse the body of requests with URL-encoded payload
+* static\(\): to serve static files
 
-**Helmet**
-Set various Http headers to secure the apps
+**Helmet** Set various Http headers to secure the apps
 
-**Morgan**
-Http request logger
+**Morgan** Http request logger
 
-**Config**
-Organize the configuration for deployment.
+**Config** Organize the configuration for deployment.
 
-**Debug**
-Package used for output the debug information in terminal
+**Debug** Package used for output the debug information in terminal
+
+Async and Await 只是.then\(\)的callback函数的语法糖。
+
+## MongoDB
+
+MongoDB is an open-source document database. It stores data in flexible, JSON-like documents.
+
+* In relational databases we have tables and rows, in MongoDB we have **collections** and **documents**. A document can contain sub-documents.
+* To connect to MongoDB:
+
+```javascript
+const mongoose = require(‘mongoose’);
+
+mongoose.connect(‘mongodb://localhost/playground')
+    .then(() => console.log(‘Connected...’))
+    .catch(err => console.error(‘Connection failed...’));
+```
+
+* To store objects in MongoDB, we need to define a Mongoose schema first. The supported types are: **String, Number, Date, Buffer** \(for storing binary data\), **Boolean and ObjectID**.
+
+```javascript
+const courseSchema = new mongoose.Schema({
+    name: String,
+    price: Number
+});
+```
+
+* We can use a SchemaType object to provide additional details:
+
+```javascript
+const courseSchema = new mongoose.Schema({
+    isPublished: { type: Boolean, default: false }
+});
+```
+
+* To create a model
+
+```javascript
+const Course = mongoose.model(‘Course’, courseSchema)
+```
+
+### CRUD Operations
+
+**Query first:** find the target first and then update.
+
+**Update first:** update data directly in DB.
+
+```javascript
+// Saving a document 
+let course = new Course({ name: ‘...’ });
+course = await course.save();
+
+// Querying documents
+const courses = await Course
+    .find({ author: ‘...’, isPublished: true })
+    .skip(10) // starts reulst at index 10
+    .limit(10) // size of 10
+    .sort({ name: 1, price: -1 })
+    .select({ name: 1, price: 1 });
+    
+// Updating a document (query first) 
+const course = await Course.findById(id);
+
+if (!course) return; 
+course.set({ name: ‘...’ });
+course.save();
+
+// Updating a document (update first) 
+const result = await Course.update(
+    { _id: id }, 
+    { $set: { name: ‘...’ }}
+);
+
+// Updating a document (update first) and return it
+const result = await Course.findByIdAndUpdate(
+    { _id: id }, 
+    {    
+        $set: { name: ‘...’ }
+    }, 
+    { new: true }
+);
+
+// Removing a document 
+const result = await Course.deleteOne({ _id: id });
+const result = await Course.deleteMany({ _id: id });
+const course = await Course.findByIdAndRemove(id);
+```
+
