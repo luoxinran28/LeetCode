@@ -1,4 +1,4 @@
-# NodeJS
+# NodeJS & MongoDB
 
 **Module:**
 
@@ -218,6 +218,125 @@ function validateCustomer(customer) {
 exports.customerSchema = customerSchema;
 exports.Customer = Customer;
 exports.validate = validateCustomer;
+
+```
+
+### Modelling Relationships between Connected Data <a id="lecture_heading"></a>
+
+如果两个model\(collection\)之间有联系怎么办，比如course和student之间需要有联系。有三种办法，一个是reference，一个是embedded，最后一个是hybrid混合前两个方法。第一种：
+
+```javascript
+// Referencing a document 
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/playground')
+  .then(() => console.log('Connected to MongoDB...'))
+  .catch(err => console.error('Could not connect to MongoDB...', err));
+
+const Author = mongoose.model('Author', new mongoose.Schema({
+  name: String,
+  bio: String,
+  website: String
+}));
+
+const Course = mongoose.model('Course', new mongoose.Schema({
+  name: String,
+  author: {        
+    type: mongoose.Schema.Types.ObjectId, // 这里reference 了author的id
+    ref: ‘Author’
+  }
+}));
+
+async function createAuthor(name, bio, website) { 
+  const author = new Author({
+    name, 
+    bio, 
+    website 
+  });
+
+  const result = await author.save();
+  console.log(result);
+}
+
+async function createCourse(name, author) {
+  const course = new Course({
+    name, 
+    author
+  }); 
+  
+  const result = await course.save();
+  console.log(result);
+}
+
+async function listCourses() { 
+  const courses = await Course
+    .find()
+    .populate('author', '-_id') // 这个函数把author除了_id以外的所有属性
+    .select('name');
+  console.log(courses);
+}
+
+createAuthor('Sean', 'My bio', 'My Website');
+createCourse('Node Course', 'authorId5ab4d')
+listCourses();
+```
+
+第二种：
+
+```javascript
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/playground')
+  .then(() => console.log('Connected to MongoDB...'))
+  .catch(err => console.error('Could not connect to MongoDB...', err));
+
+const authorSchema = new mongoose.Schema({
+  name: String,
+  bio: String,
+  website: String
+});
+
+const Author = mongoose.model('Author', authorSchema);
+
+const Course = mongoose.model('Course', new mongoose.Schema({
+  name: String,
+  author: authorSchema, // 把真个authorSchema 全部照搬过来
+}));
+
+async function createCourse(name, author) {
+  const course = new Course({
+    name, 
+    author
+  }); 
+  
+  const result = await course.save();
+  console.log(result);
+}
+
+async function listCourses() { 
+  const courses = await Course.find();
+  console.log(courses);
+}
+
+// Query first
+async function updateAuthorInCourse(courseId) {
+  const course = await Course.findById(courseId);
+  course.author.name = 'Sean Luo';
+  course.save();
+}
+
+// Update first
+async function updateAuthorInCourse(courseId) {
+  const course = await Course.update({ _id: courseId }, {
+    $set: {
+      'author.name': 'Sean Luo';
+    }
+  });
+}
+
+
+updateAuthorInCourse("5ab4d");
+// createCourse('Node Course', new Author({ name: 'Mosh' }));
 
 ```
 
