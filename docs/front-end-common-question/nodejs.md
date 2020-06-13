@@ -106,7 +106,7 @@ const courseSchema = new mongoose.Schema({
 const Course = mongoose.model(‘Course’, courseSchema)
 ```
 
-### CRUD Operations
+### CRUD Operations in Controller
 
 **Query first:** find the target first and then update.
 
@@ -151,5 +151,73 @@ const result = await Course.findByIdAndUpdate(
 const result = await Course.deleteOne({ _id: id });
 const result = await Course.deleteMany({ _id: id });
 const course = await Course.findByIdAndRemove(id);
+```
+
+A Customer schema model example:
+
+```javascript
+const Joi = require("joi");
+const mongoose = require("mongoose");
+
+// Adding validation
+const customerSchema = new mongoose.Schema({
+  /*
+    Built-in validators:
+    -Strings: minlength, maxlength, match, enum, 
+              lowercase, uppercase, trim
+    -Numbers: min, max
+    -Dates: min, max
+    -All types: required
+  */
+  name: {
+    type: String,
+    required: true,
+    minlength: 5,
+    maxlength: 50
+  },
+  isGold: {
+    type: Boolean,
+    default: false
+  },
+  phone: {
+    type: String,
+    required: true,
+    minlength: 5,
+    maxlength: 20
+  },
+  // Custom validation 
+  tags: [
+    type: Array,
+    validate: {
+      validator: function(v) { 
+        return v && v.length > 0; 
+      },
+      message: ‘A course should have at least 1 tag.’
+    }
+  ]
+});
+
+const Customer = mongoose.model("Customer", customerSchema);
+
+// Use Joi to validate the types before requesting DB
+function validateCustomer(customer) {
+  const schema = {
+    name: Joi.string()
+      .min(5)
+      .max(50)
+      .required(),
+    phone: Joi.string()
+      .min(5)
+      .max(20)
+      .required(),
+    isGold: Joi.boolean()
+  };
+  return Joi.validate(customer, schema);
+}
+
+exports.customerSchema = customerSchema;
+exports.Customer = Customer;
+exports.validate = validateCustomer;
+
 ```
 
