@@ -161,12 +161,13 @@ Hooks are functions to hook into React state and lifecycle features from functio
 setEffect\(\)合并了componentDidMount\(\), componentDidUpdate\(\), componentWillUnmount\(\)
 
 ```jsx
-import React, { useState, useEffect, Fragment } from 'react'; // Hooks func starts with 'use'
+import React, { useState, useEffect, useContext, Fragment } from 'react'; // Hooks func starts with 'use'
 
 function Counter() {
     const array = useState(0);
     const count = array[0]; // this.state.count
     const setState = array[1]; // this.setState()
+    const contextType = useContext("..."); // 类似static
     
     useEffect(() => { // componentDidMount and componentDidUpdate
         document.title = `Clicked ${count} times.`;
@@ -185,6 +186,8 @@ function Counter() {
     );
 }
 ```
+
+对于static在class里面，hooks可以使用useContext。
 
 **What's Context?**
 
