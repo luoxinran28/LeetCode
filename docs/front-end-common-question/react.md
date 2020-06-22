@@ -161,13 +161,23 @@ Hooks are functions to hook into React state and lifecycle features from functio
 setEffect\(\)合并了componentDidMount\(\), componentDidUpdate\(\), componentWillUnmount\(\)
 
 ```jsx
+/* StoreContext.js */
+import { createContext } from 'react';
+
+const StoreContext = createContext();
+
+export default StoreContext;
+
+
+/* Counter.js */
 import React, { useState, useEffect, useContext, Fragment } from 'react'; // Hooks func starts with 'use'
+import StoreContext from './StoreContext';
 
 function Counter() {
     const array = useState(0);
     const count = array[0]; // this.state.count
     const setState = array[1]; // this.setState()
-    const contextType = useContext("..."); // 类似static
+    const contextType = useContext(StoreContext); // 类似static
     
     useEffect(() => { // componentDidMount and componentDidUpdate
         document.title = `Clicked ${count} times.`;
@@ -182,6 +192,7 @@ function Counter() {
                 Counter: { count }
             </div>
             <button onClick = {() => setState(count + 1)}></button>
+            <div>{contextType}</>
         </Fragment>
     );
 }
