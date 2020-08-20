@@ -6,19 +6,42 @@ OPM &gt; Portfolio &gt; Program &gt; Project
 
 OPM: Guide to focus on strategy
 
-Project Management Office:
+**Project Management Office:**
 
 * Supportive: policies, templates, lessons
 * Controlling: support on how to manage 
 * Directive: responsible for results
 
-Org Structure:
+**Org Structure:**
 
 * Functional: group of specializations
 * Project-oriented: organized by projects
 * Matrix: mixture of the above.
   * Project expediter: assistant and communication coordinator
   * Project coordinator: reports to higher lever managers.
+
+Organizational Process Assets \(OPAs\):
+
+Processes, Procedures, Policies, historical records, and lessons learned from previous projects.
+
+**Enterprise Environmental Factors:**
+
+External: government rules, economics, etc.
+
+Internal: Geo-location, culture, team structure, technology, etc.
+
+**Assumption Log:**
+
+* Assumptions: what stakeholders believe to be true about the project
+* Constraints: schedule, cost, risk, scope, quality, resources, costomer satisfaction, and any other limits.
+
+**Work Performance Data, Information, and Reports**
+
+Data: The initial measurements and details about activities gathered during the Direct and Manage Project Work process in executing.
+
+Information: When Monitoring and Controlling a project, WPD is analyzed to make sure it conforms with project management plan and assessed for project as a whole.
+
+Reports: Organized WPI.
 
 ## **Quality:**
 
