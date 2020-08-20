@@ -267,3 +267,7 @@
   * [CSS](front-end-common-question/css.md)
   * [JS](front-end-common-question/js.md)
 
+## PMP Study Notes
+
+* [Notes of Prep Exam](pmp-study-notes/notes-of-prep-exam.md)
+
