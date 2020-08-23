@@ -14,11 +14,11 @@ OPM: Guide to focus on strategy
 
 **Org Structure:**
 
-* Functional: group of specializations
+* Functional: group of specializations. little authorities.
 * Project-oriented: organized by projects
 * Matrix: mixture of the above.
   * Project expediter: assistant and communication coordinator
-  * Project coordinator: reports to higher lever managers.
+  * Project coordinator: some authorities for decisions. reports to higher lever managers.
 
 Organizational Process Assets \(OPAs\):
 
