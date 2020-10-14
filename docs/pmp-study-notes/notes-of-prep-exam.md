@@ -43,7 +43,7 @@ Information: When Monitoring and Controlling a project, WPD is analyzed to make 
 
 Reports: Organized WPI.
 
-## **Quality:**
+### **Quality:**
 
 Attribute sapling measures the quality of items in a sample on a pass/fail basis
 
@@ -59,11 +59,11 @@ Manage Quality: Quality audit
 
 Cost of Non-conformance: internal and external failures.
 
-## **Communication:**
+### **Communication:**
 
 Pull: for large audience
 
-## **Resource:**
+### **Resource:**
 
 Resource leveling is used when resources are under or over allocated. Resource smoothing is used when resources are unevenly allocated. Resource leveling can be applied to activities on the critical path while in resource smoothing you do not touch activities on the critical path.
 
@@ -91,7 +91,7 @@ Consulted: person that needs to feedback and contribute to the activity.
 
 Informed: person that needs to know of the decision or action.
 
-## **Scheduling:**
+### **Scheduling:**
 
 Crashing: Add resources to your project so you can finish faster. Crashing almost always involves a financial cost.
 
