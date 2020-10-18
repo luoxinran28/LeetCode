@@ -295,17 +295,17 @@ PM三大能力：
 * 参数估算：根据历史数据
 * 管理储备：针对“未知-未知”风险
 * 成本基准：包括应急储备、不包括管理储备，但是已动用的管理储备要包括在基准中
-* BAC, AC, PV, EV（key）
+* BAC, AC, PV, EV（key）挣值分析
   * SV = EV - PV
   * CV = EV - AC
   * SPI = EV / PV
-  * CPI = EV / AC
+  * CPI = EV / AC 以上是偏差分析
   * BAC - EV：剩下多少工作
   * BAC - AC：剩下多少预算
 
     预测
 * 典型：
-  * 完工估算EAC = AC + 完工尚需估算ETC
+  * 完工估算EAC = AC + 完工尚需估算ETC 趋势分析
   * 完工尚需估算ETC = \(BAC - EV\) / CPI  =&gt; EAC = BAC / CPI
 * 非典型，后续工作按照原计划进行：
   * ETC = AC + \(BAC-EV\) / 1
