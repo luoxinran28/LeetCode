@@ -313,6 +313,7 @@ PM三大能力：
     如果受到SPI影响：
 
   * ETC = AC + \(BAC-EV\) / \(CPI \* SPI\)
+* TCIP = \(BAC - EV\) / \(BAC - AC\)
 
 （22）制定预算 
 
