@@ -133,6 +133,8 @@ Direct and Manage Project Work
 12. 验收标准是针对质量和可交付成果的。 对整个项目要的是成功、失败标准，没有验收标准。
 13. 收集经验教训通过专家判断。
 14. 运营部门做的是重复的、无限持续的工作，项目是独特的、有限持续时间的。
+15. 假设条件不成立会带来威胁
+16. 冲突管理：撤退/回避\(Withdraw/Avoid\)：推迟问题，不理；缓解/包容\(Smooth/Accommodate\)：单方退让，求同存异；妥协/调节\(Compromise/Reconcile\)：各方退让，一定程度满意；强迫/命令\(Force/Direct\)：强行解决；合作/解决问题\(Collaborate/Problem Solve\)：综合不同观点。
 
 
 
