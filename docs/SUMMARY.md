@@ -266,7 +266,8 @@
   * [HTML](front-end-common-question/html.md)
   * [CSS](front-end-common-question/css.md)
   * [JS](front-end-common-question/js.md)
-* [Data Mining / ML / AI](data-mining-ml-ai.md)
+* [Data Mining / ML / AI](data-mining-ml-ai/README.md)
+  * [朴素贝叶斯](data-mining-ml-ai/pu-su-bei-ye-si.md)
 
 ## PMP Study Notes
 
